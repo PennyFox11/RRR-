@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class EnemyHealthSystem : MonoBehaviour
+public class Enemyhealthsystem : MonoBehaviour
 {
     public int maxHealth = 50;
     private int currentHealth;
 
-    public HealthBar healthBar; // the existing red slider
+    public HealthBar healthBar; // the existing slider
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +14,7 @@ public class EnemyHealthSystem : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-public void TakeDamage(int damage, Vector2 attackerPosition) // I think this is underlined in red because it needs to be linked to the Player script
+    public void TakeDamage(int damage, Vector2 attackerPosition)
     {
         Vector2 directionToAttacker = (attackerPosition - (Vector2)transform.position).normalized;
 
@@ -25,8 +26,8 @@ public void TakeDamage(int damage, Vector2 attackerPosition) // I think this is 
         }
         else if (dot < -0.5f)
         {
-            Debug.Log("Hit from BEHIND");
-            damage *= 2; // bonus damage from behind - not sure if this works with our game but can be adjusted later
+            Debig.Log("Hit from BEHIND");
+            damage *=2; //bonus damage from behind - can be adjusted later
         }
         else
         {
@@ -34,11 +35,11 @@ public void TakeDamage(int damage, Vector2 attackerPosition) // I think this is 
 
             if (side > 0)
             {
-                Debig.Log("Hit from Right");
+                Debug.Log("Hit from RIGHT");
             }
             else
             {
-                Debug.Log("Hit from Left");
+                Debug.Log("Hit from LEFT");
             }
         }
 
@@ -54,11 +55,5 @@ public void TakeDamage(int damage, Vector2 attackerPosition) // I think this is 
     void Die()
     {
         Destroy(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
