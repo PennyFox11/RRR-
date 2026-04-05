@@ -565,8 +565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404d6b6cca6fcef47b15693234840d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  MoveSpeed: 5
-  Rigidbody: {fileID: 0}
 --- !u!212 &192059980
 SpriteRenderer:
   serializedVersion: 2
