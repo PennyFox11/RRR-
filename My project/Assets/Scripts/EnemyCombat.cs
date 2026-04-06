@@ -6,7 +6,7 @@ public class EnemyCombat : MonoBehaviour
     public float attackRange = 1.2f;
     public Transform player;
 
-    public float attackCooldown = 1f; // seconds
+    public float attackCooldown = 2f; // seconds
     private float lastAttackTime;
 
     void Update()

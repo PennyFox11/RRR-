@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public Transform player;
-    public float detectionRange = 5f;
+    public float detectionRange = 10f;
     public float moveSpeed = 2f;
 
     [Range(-1f, 1f)]
@@ -21,31 +21,43 @@ public class EnemyController : MonoBehaviour
     }
 
     void Update()
+{
+    Debug.Log("Update is running");
+
+    if (player == null)
     {
-        if (player == null) return;
+        Debug.Log("Player is NULL");
+        return;
+    }
 
-        Vector3 directionToPlayer = (player.position - transform.position).normalized;
-        float distance = Vector3.Distance(transform.position, player.position);
+    Vector3 directionToPlayer = player.position - transform.position;
+    float distance = directionToPlayer.magnitude;
 
-        float dot = Vector3.Dot(transform.up, directionToPlayer);
+    Debug.Log("Distance to player: " + distance);
 
-        bool playerInFront = dot > fieldOfViewThreshold;
+    bool playerInFront = true;
 
-        if (distance <= detectionRange && playerInFront)
-        {
-            if (!isChasing)
-            {
-                isChasing = true;
-                if (audioSource != null) audioSource.Play();
-            }
+    if (distance <= detectionRange && playerInFront)
+    {
+        Debug.Log("Enemy should be chasing");
 
-            ChasePlayer();
-        }
-        else
-        {
-            isChasing = false;
-            ReturnToStart();
-        }
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            player.position,
+            moveSpeed * Time.deltaTime
+        );
+    }
+    else
+    {
+        Debug.Log("Enemy returning to start");
+
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            startPosition,
+            moveSpeed * Time.deltaTime
+        );
+    }
+
     }
 
     void ChasePlayer()
