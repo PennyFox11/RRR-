@@ -2,26 +2,54 @@ using UnityEngine;
 
 public class EnemyVision : MonoBehaviour
 {
-    private Enemy2Controller enemy;
+    [Header("References")]
+    public Enemy2Controller enemy2Controller; // Drag your Enemy2 GameObject here
 
-    private void Start()
+    [Header("Detection Settings")]
+    public float visionDistance = 5f;       // How far the enemy can "see"
+    public LayerMask playerLayer;           // Assign Player layer
+    public LayerMask obstacleLayer;         // Optional: block vision with walls
+
+    void Update()
     {
-        enemy = GetComponentInParent<Enemy2Controller>();
+        CheckPlayerInSight();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void CheckPlayerInSight()
     {
-        if (other.CompareTag("Player"))
+        if (enemy2Controller == null) return;
+
+        // Only act if Enemy2 has detected the player
+        if (enemy2Controller.IsPlayerDetected) // property, no parentheses
         {
-            enemy.PlayerDetected();
+            // Example: raycast to player for line-of-sight (optional)
+             Vector2 direction = GetPlayerPosition() - (Vector2)enemy2Controller.transform.position;
+            
+            RaycastHit2D hit = Physics2D.Raycast(
+                enemy2Controller.transform.position,
+                direction,
+                visionDistance,
+                playerLayer | obstacleLayer
+            );
+
+            if (hit.collider != null && ((1 << hit.collider.gameObject.layer) & playerLayer) != 0)
+            {
+                // Player is in sight
+                Debug.Log("Player is in front of Enemy2!");
+            }
+            else
+            {
+                // Player is no longer visible; inform Enemy2
+                enemy2Controller.PlayerLost(); // Calls the public method
+            }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    // Optional helper to find the player in the scene
+    Vector2 GetPlayerPosition()
     {
-        if (other.CompareTag("Player"))
-        {
-            enemy.PlayerLost();
-        }
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null) return player.transform.position;
+        return Vector2.zero;
     }
 }

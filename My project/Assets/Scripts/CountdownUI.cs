@@ -43,7 +43,7 @@ public class CountdownUI : MonoBehaviour
             yield return null;
 
             // Stop if player leaves detection
-            if (!currentEnemy.IsPlayerDetected())
+            if (!currentEnemy.IsPlayerDetected)
             {
                 countdownText.text = "";
                 yield break;
