@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 387856884}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,6 +903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889726605}
   - component: {fileID: 889726607}
+  - component: {fileID: 889726608}
   - component: {fileID: 889726606}
   m_Layer: 0
   m_Name: CountdownText
@@ -1030,6 +1031,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889726604}
   m_CullTransparentMesh: 1
+--- !u!114 &889726608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889726604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02adfc5c5a217ba458813fbd247d2a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountdownUI
+  countdownText: {fileID: 889726606}
 --- !u!1 &904061874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5760f40ccf99314bb617b0454e8ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DogController
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 1696409694}
+  - {fileID: 574832400}
+  - {fileID: 1039656373}
+  - {fileID: 1406235043}
   speed: 2
 --- !u!82 &1033439555
 AudioSource:

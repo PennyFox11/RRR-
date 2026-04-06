@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class CountdownUI : MonoBehaviour
 {
     public static CountdownUI Instance;
 
-    public Text countdownText;
+    public TMP_Text countdownText; // TextMeshPro reference
 
     private Coroutine countdownCoroutine;
     private Enemy2Controller currentEnemy;
@@ -14,7 +14,10 @@ public class CountdownUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        countdownText.text = "";
+
+        // Ensure text starts hidden
+        if (countdownText != null)
+            countdownText.text = "";
     }
 
     public void StartCountdown(float duration, Enemy2Controller enemy)
@@ -33,11 +36,13 @@ public class CountdownUI : MonoBehaviour
 
         while (timer > 0)
         {
+            // Update countdown display
             countdownText.text = Mathf.Ceil(timer).ToString();
-            timer -= Time.deltaTime;
 
+            timer -= Time.deltaTime;
             yield return null;
 
+            // Stop if player leaves detection
             if (!currentEnemy.IsPlayerDetected())
             {
                 countdownText.text = "";
@@ -61,10 +66,10 @@ public class CountdownUI : MonoBehaviour
     {
         Debug.Log("GAME OVER");
 
-        // Option 1: Pause game
+        // Pause the game
         Time.timeScale = 0f;
 
-        // Option 2: Load scene
+        // Optional: Load a Game Over scene instead
         // SceneManager.LoadScene("GameOverScene");
     }
 }
