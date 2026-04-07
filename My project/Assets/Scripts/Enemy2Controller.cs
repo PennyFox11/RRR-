@@ -1,22 +1,22 @@
 using UnityEngine;
-using TMPro;
+using TMPro; // links to text
 using UnityEngine.SceneManagement;
 
 public class Enemy2Controller : MonoBehaviour
 {
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints;
+    public Transform[] patrolPoints; 
     public float patrolSpeed = 2f;
 
     [Header("Detection Settings")]
     public float detectionRadius = 3f;
 
     [Header("Countdown UI")]
-    public TMP_Text countdownText;
+    public TMP_Text countdownText; 
     public float countdownDuration = 10f;
 
     [Header("Audio")]
-    public AudioSource alertAudio;
+    public AudioSource alertAudio; 
 
     // Internal state
     private int currentPoint = 0;
@@ -29,7 +29,7 @@ public class Enemy2Controller : MonoBehaviour
     public bool IsPlayerDetected => playerDetected;
 
     // --- PLAYER LOST ---
-    public void PlayerLost()
+    public void PlayerLost() // in the scenario that the player is not detected by the dog
     {
         playerDetected = false;
         countdownTimer = 0f;
@@ -39,16 +39,16 @@ public class Enemy2Controller : MonoBehaviour
     }
 
     // --- START ---
-    void Start()
+    void Start() 
     {
-        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer = GetComponent<LineRenderer>(); // draw the dog's path
         DrawPath();
 
         if (countdownText != null)
             countdownText.text = "";
 
-        // Find player dynamically
-        GameObject playerObj = GameObject.FindWithTag("Player");
+        // finds the player (currently in a different scene)
+        GameObject playerObj = GameObject.FindWithTag("Player"); 
         if (playerObj != null)
         {
             player = playerObj.transform;
@@ -60,16 +60,14 @@ public class Enemy2Controller : MonoBehaviour
     }
 
     // --- UPDATE ---
-    void Update()
+    void Update() // lists the scenarios that must be checked each frame
     {
-        Debug.Log("Update is running");
         Patrol();
         DetectPlayer();
         UpdateCountdown();
     }
 
-    // --- PATROL ---
-    void Patrol()
+    void Patrol() // runs the dog's patrol mechanic
     {
         if (playerDetected) return;
         if (patrolPoints.Length == 0) return;
@@ -84,18 +82,14 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    // --- DETECTION (LINE OF SIGHT + ABOVE CHECK) ---
-    void DetectPlayer()
+    void DetectPlayer() // check if player is in front and nearby
     {
-        Debug.Log("DetectPlayer running");
-        
         if (player == null) return;
 
         Vector2 direction = (player.position - transform.position).normalized;
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Only detect if player is ABOVE the enemy
-        bool playerAbove = player.position.y > transform.position.y;
+        bool playerAbove = player.position.y > transform.position.y; // defines what "above" means
 
         if (distance <= detectionRadius && playerAbove)
         {
@@ -106,10 +100,10 @@ public class Enemy2Controller : MonoBehaviour
                 if (!playerDetected)
                 {
                     playerDetected = true;
-                    countdownTimer = countdownDuration;
+                    countdownTimer = countdownDuration; // starts countdown
 
                     if (alertAudio != null)
-                        alertAudio.Play();
+                        alertAudio.Play(); // dog barks
                 }
             }
             else
@@ -125,12 +119,11 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    // --- COUNTDOWN ---
-    void UpdateCountdown()
+    void UpdateCountdown() // manages the countdown
     {
         if (!playerDetected) return;
 
-        countdownTimer -= Time.deltaTime;
+        countdownTimer -= Time.deltaTime; // subtract by one second
 
         if (countdownText != null)
             countdownText.text = Mathf.Ceil(countdownTimer).ToString();
@@ -141,8 +134,7 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    // --- DRAW PATROL PATH ---
-    void DrawPath()
+    void DrawPath() // draws the patrol path
     {
         if (patrolPoints == null || patrolPoints.Length == 0 || lineRenderer == null)
             return;
@@ -155,15 +147,13 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    // --- GIZMOS (DEBUG VISUALS) ---
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected() // debug visuals
     {
         // Detection radius
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
 
-        // Line to player
-        if (player != null)
+        if (player != null) // line to the player
         {
             Gizmos.color = Color.green;
             Gizmos.DrawLine(transform.position, player.position);
