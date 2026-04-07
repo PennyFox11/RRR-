@@ -1,23 +1,22 @@
 using UnityEngine;
-using TMPro; // Required for TextMeshPro
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class Enemy2Controller : MonoBehaviour
 {
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints;      
+    public Transform[] patrolPoints;
     public float patrolSpeed = 2f;
 
     [Header("Detection Settings")]
-    public float detectionDistance = 1f;  
-    public LayerMask playerLayer;         
+    public float detectionRadius = 3f;
 
     [Header("Countdown UI")]
-    public TMP_Text countdownText;        
-    public float countdownDuration = 10f; 
+    public TMP_Text countdownText;
+    public float countdownDuration = 10f;
 
     [Header("Audio")]
-    public AudioSource alertAudio;        
+    public AudioSource alertAudio;
 
     // Internal state
     private int currentPoint = 0;
@@ -25,12 +24,11 @@ public class Enemy2Controller : MonoBehaviour
     private float countdownTimer = 0f;
 
     private LineRenderer lineRenderer;
-
-    // Dynamic reference to the Player
     private Transform player;
 
-    public bool IsPlayerDetected => playerDetected;  
+    public bool IsPlayerDetected => playerDetected;
 
+    // --- PLAYER LOST ---
     public void PlayerLost()
     {
         playerDetected = false;
@@ -40,6 +38,7 @@ public class Enemy2Controller : MonoBehaviour
         if (countdownText != null) countdownText.text = "";
     }
 
+    // --- START ---
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -48,7 +47,7 @@ public class Enemy2Controller : MonoBehaviour
         if (countdownText != null)
             countdownText.text = "";
 
-        // --- DYNAMIC PLAYER LOOKUP ---
+        // Find player dynamically
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
         {
@@ -56,20 +55,23 @@ public class Enemy2Controller : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Enemy2Controller: Player not found! Make sure the PlayerBase is tagged 'Player'.");
+            Debug.LogWarning("Enemy2Controller: Player not found! Ensure Player is tagged 'Player'.");
         }
     }
 
+    // --- UPDATE ---
     void Update()
     {
+        Debug.Log("Update is running");
         Patrol();
         DetectPlayer();
         UpdateCountdown();
     }
 
+    // --- PATROL ---
     void Patrol()
     {
-        if (playerDetected) return; 
+        if (playerDetected) return;
         if (patrolPoints.Length == 0) return;
 
         Transform target = patrolPoints[currentPoint];
@@ -82,32 +84,48 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
+    // --- DETECTION (LINE OF SIGHT + ABOVE CHECK) ---
     void DetectPlayer()
     {
-        Vector2 origin = (Vector2)transform.position + Vector2.right * detectionDistance;
-        Vector2 size = new Vector2(1f, 1f);
+        Debug.Log("DetectPlayer running");
+        
+        if (player == null) return;
 
-        Collider2D hit = Physics2D.OverlapBox(origin, size, 0f, playerLayer);
+        Vector2 direction = (player.position - transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, player.position);
 
-        if (hit != null)
+        // Only detect if player is ABOVE the enemy
+        bool playerAbove = player.position.y > transform.position.y;
+
+        if (distance <= detectionRadius && playerAbove)
         {
-            if (!playerDetected)
-            {
-                playerDetected = true;
-                countdownTimer = countdownDuration;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRadius);
 
-                if (alertAudio != null) alertAudio.Play();
+            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            {
+                if (!playerDetected)
+                {
+                    playerDetected = true;
+                    countdownTimer = countdownDuration;
+
+                    if (alertAudio != null)
+                        alertAudio.Play();
+                }
+            }
+            else
+            {
+                if (playerDetected)
+                    PlayerLost();
             }
         }
         else
         {
             if (playerDetected)
-            {
                 PlayerLost();
-            }
         }
     }
 
+    // --- COUNTDOWN ---
     void UpdateCountdown()
     {
         if (!playerDetected) return;
@@ -119,28 +137,36 @@ public class Enemy2Controller : MonoBehaviour
 
         if (countdownTimer <= 0f)
         {
-            // Example: reload current scene (replace with your own Game Over logic)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
+    // --- DRAW PATROL PATH ---
     void DrawPath()
     {
         if (patrolPoints == null || patrolPoints.Length == 0 || lineRenderer == null)
             return;
 
         lineRenderer.positionCount = patrolPoints.Length;
+
         for (int i = 0; i < patrolPoints.Length; i++)
         {
             lineRenderer.SetPosition(i, patrolPoints[i].position);
         }
     }
 
+    // --- GIZMOS (DEBUG VISUALS) ---
     private void OnDrawGizmosSelected()
     {
+        // Detection radius
         Gizmos.color = Color.red;
-        Vector2 origin = (Vector2)transform.position + Vector2.right * detectionDistance;
-        Vector2 size = new Vector2(1f, 1f);
-        Gizmos.DrawWireCube(origin, size);
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+
+        // Line to player
+        if (player != null)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(transform.position, player.position);
+        }
     }
 }
