@@ -1,22 +1,23 @@
 using UnityEngine;
 using TMPro; // Required for TextMeshPro
+using UnityEngine.SceneManagement;
 
 public class Enemy2Controller : MonoBehaviour
 {
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints;      // L-shaped path: Left, Up, Down, Right
-    public float patrolSpeed = 2f;        // Patrol speed
+    public Transform[] patrolPoints;      
+    public float patrolSpeed = 2f;
 
     [Header("Detection Settings")]
-    public float detectionDistance = 1f;  // Distance in front to detect player
-    public LayerMask playerLayer;         // Assign Player layer
+    public float detectionDistance = 1f;  
+    public LayerMask playerLayer;         
 
     [Header("Countdown UI")]
-    public TMP_Text countdownText;        // Drag CountdownText object
-    public float countdownDuration = 10f; // 10-second countdown
+    public TMP_Text countdownText;        
+    public float countdownDuration = 10f; 
 
     [Header("Audio")]
-    public AudioSource alertAudio;        // Optional alert sound
+    public AudioSource alertAudio;        
 
     // Internal state
     private int currentPoint = 0;
@@ -25,8 +26,10 @@ public class Enemy2Controller : MonoBehaviour
 
     private LineRenderer lineRenderer;
 
-    // --- PUBLIC INTERFACES FOR OTHER SCRIPTS ---
-    public bool IsPlayerDetected => playerDetected;  // Read-only property
+    // Dynamic reference to the Player
+    private Transform player;
+
+    public bool IsPlayerDetected => playerDetected;  
 
     public void PlayerLost()
     {
@@ -37,16 +40,24 @@ public class Enemy2Controller : MonoBehaviour
         if (countdownText != null) countdownText.text = "";
     }
 
-    // --- UNITY METHODS ---
     void Start()
     {
-        // Initialize LineRenderer and draw patrol path
         lineRenderer = GetComponent<LineRenderer>();
         DrawPath();
 
-        // Ensure countdown UI starts empty
         if (countdownText != null)
             countdownText.text = "";
+
+        // --- DYNAMIC PLAYER LOOKUP ---
+        GameObject playerObj = GameObject.FindWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Enemy2Controller: Player not found! Make sure the PlayerBase is tagged 'Player'.");
+        }
     }
 
     void Update()
@@ -56,24 +67,21 @@ public class Enemy2Controller : MonoBehaviour
         UpdateCountdown();
     }
 
-    // --- PATROL LOGIC ---
     void Patrol()
     {
-        if (playerDetected) return; // Stop patrol when player detected
+        if (playerDetected) return; 
         if (patrolPoints.Length == 0) return;
 
         Transform target = patrolPoints[currentPoint];
         Vector3 direction = (target.position - transform.position).normalized;
         transform.position += direction * patrolSpeed * Time.deltaTime;
 
-        // Move to next point if close enough
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
             currentPoint = (currentPoint + 1) % patrolPoints.Length;
         }
     }
 
-    // --- PLAYER DETECTION ---
     void DetectPlayer()
     {
         Vector2 origin = (Vector2)transform.position + Vector2.right * detectionDistance;
@@ -95,12 +103,11 @@ public class Enemy2Controller : MonoBehaviour
         {
             if (playerDetected)
             {
-                PlayerLost(); // Uses public method for consistency
+                PlayerLost();
             }
         }
     }
 
-    // --- COUNTDOWN LOGIC ---
     void UpdateCountdown()
     {
         if (!playerDetected) return;
@@ -113,25 +120,22 @@ public class Enemy2Controller : MonoBehaviour
         if (countdownTimer <= 0f)
         {
             // Example: reload current scene (replace with your own Game Over logic)
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
-    // --- DRAW PATROL PATH ---
     void DrawPath()
     {
         if (patrolPoints == null || patrolPoints.Length == 0 || lineRenderer == null)
             return;
 
         lineRenderer.positionCount = patrolPoints.Length;
-
         for (int i = 0; i < patrolPoints.Length; i++)
         {
             lineRenderer.SetPosition(i, patrolPoints[i].position);
         }
     }
 
-    // Optional: visualize detection box in Scene view
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
