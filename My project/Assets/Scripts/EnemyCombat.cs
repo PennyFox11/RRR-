@@ -15,17 +15,18 @@ public class EnemyCombat : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance <= attackRange)
-        {
-            Vector3 dir = (player.position - transform.position).normalized;
-            float dot = Vector3.Dot(transform.up, dir);
+        bool playerBelow = player.position.y < transform.position.y;
 
-            if (dot > 0.5f && Time.time > lastAttackTime + attackCooldown)
+        if (distance <= attackRange && playerBelow)
+        {
+            if (Time.time > lastAttackTime + attackCooldown)
             {
                 PlayerHealth ph = player.GetComponent<PlayerHealth>();
+
                 if (ph != null)
                 {
                     ph.TakeDamage(damage);
+                    Debug.Log("Player is being attacked");
                 }
 
                 lastAttackTime = Time.time;

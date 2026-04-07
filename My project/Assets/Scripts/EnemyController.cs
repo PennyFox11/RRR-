@@ -22,25 +22,23 @@ public class EnemyController : MonoBehaviour
 
     void Update()
 {
-    Debug.Log("Update is running");
-
     if (player == null)
     {
-        Debug.Log("Player is NULL");
         return;
     }
 
     Vector3 directionToPlayer = player.position - transform.position;
     float distance = directionToPlayer.magnitude;
 
-    Debug.Log("Distance to player: " + distance);
-
-    bool playerInFront = true;
+    bool playerInFront = player.position.y < transform.position.y;
 
     if (distance <= detectionRange && playerInFront)
     {
-        Debug.Log("Enemy should be chasing");
-
+        if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+            
         transform.position = Vector3.MoveTowards(
             transform.position,
             player.position,
@@ -49,8 +47,6 @@ public class EnemyController : MonoBehaviour
     }
     else
     {
-        Debug.Log("Enemy returning to start");
-
         transform.position = Vector3.MoveTowards(
             transform.position,
             startPosition,
