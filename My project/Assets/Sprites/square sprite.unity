@@ -401,6 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404d6b6cca6fcef47b15693234840d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  MoveSpeed: 0
 --- !u!114 &387856884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 402175096}
   - component: {fileID: 402175095}
-  - component: {fileID: 402175094}
   - component: {fileID: 402175097}
   m_Layer: 0
   m_Name: Main Camera
@@ -446,14 +446,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &402175094
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402175093}
-  m_Enabled: 1
 --- !u!20 &402175095
 Camera:
   m_ObjectHideFlags: 0
