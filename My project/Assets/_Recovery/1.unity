@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1869de97a4ed65e459153ac0e858a43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  detectionRange: 1.5
+  detectionRange: 5
   moveSpeed: 1
   fieldOfViewThreshold: 0.5
 --- !u!82 &1777681490
@@ -2013,7 +2013,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.590168
+  MinDistance: 0.64508724
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
