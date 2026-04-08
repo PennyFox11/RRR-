@@ -11,6 +11,7 @@ public class EnemyCombat : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("EnemyCombat running");
         // Dynamically find the Player at runtime
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)

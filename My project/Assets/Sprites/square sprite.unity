@@ -1864,10 +1864,10 @@ GameObject:
   - component: {fileID: 1777681487}
   - component: {fileID: 1777681485}
   - component: {fileID: 1777681489}
-  - component: {fileID: 1777681492}
   - component: {fileID: 1777681491}
   - component: {fileID: 1777681490}
   - component: {fileID: 1777681493}
+  - component: {fileID: 1777681494}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2103,21 +2103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 100
   healthBar: {fileID: 884688312}
---- !u!114 &1777681492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777681484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7d7bc178c42d84ba3261f9a76f8f2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
-  damage: 10
-  attackRange: 1
-  attackCooldown: 2
 --- !u!61 &1777681493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2164,6 +2149,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0.03
+--- !u!114 &1777681494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777681484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7d7bc178c42d84ba3261f9a76f8f2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  damage: 10
+  attackRange: 1.2
+  attackCooldown: 2
 --- !u!1 &2008000552
 GameObject:
   m_ObjectHideFlags: 0
