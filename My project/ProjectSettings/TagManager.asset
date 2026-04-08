@@ -41,5 +41,35 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: New Layer 1
+    uniqueID: 3691421181
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 3994240741
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2523464885
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1162653033
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 317354581
+    locked: 0
+  - name: background
+    uniqueID: 2916048427
+    locked: 0
+  - name: walking infront
+    uniqueID: 3857317729
+    locked: 0
+  - name: collision
+    uniqueID: 1421718233
+    locked: 0
+  - name: player
+    uniqueID: 3372099763
+    locked: 0
+  - name: walk behind
+    uniqueID: 2585647283
+    locked: 0
   m_RenderingLayers:
   - Default
