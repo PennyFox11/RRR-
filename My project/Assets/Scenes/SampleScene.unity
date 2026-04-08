@@ -546,10 +546,8 @@ GameObject:
   - component: {fileID: 192059979}
   - component: {fileID: 192059982}
   - component: {fileID: 192059983}
-  - component: {fileID: 192059985}
-  - component: {fileID: 192059984}
   m_Layer: 0
-  m_Name: PlayerBase
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,6 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   MoveSpeed: 5
+  Rigidbody: {fileID: 0}
 --- !u!212 &192059980
 SpriteRenderer:
   serializedVersion: 2
@@ -714,33 +713,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0.04
---- !u!114 &192059984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192059978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a263576bd3968474dbe28a6468fe488c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
-  attackRange: 1.5
---- !u!114 &192059985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192059978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e563b58aec90d6a44b5bbbd61f72ff44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  health: 100
+  m_EdgeRadius: 0
 --- !u!1 &299200408
 GameObject:
   m_ObjectHideFlags: 0
