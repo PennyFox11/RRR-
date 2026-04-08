@@ -1,24 +1,25 @@
 using UnityEngine;
-using TMPro; // links to text
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class Enemy2Controller : MonoBehaviour
 {
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints; 
+    public Transform[] patrolPoints;
     public float patrolSpeed = 2f;
 
     [Header("Detection Settings")]
     public float detectionRadius = 3f;
+    [Range(-1f, 1f)]
+    public float visionThreshold = 0.5f; // controls how wide vision is
 
     [Header("Countdown UI")]
-    public TMP_Text countdownText; 
+    public TMP_Text countdownText;
     public float countdownDuration = 10f;
 
     [Header("Audio")]
-    public AudioSource alertAudio; 
+    public AudioSource alertAudio;
 
-    // Internal state
     private int currentPoint = 0;
     private bool playerDetected = false;
     private float countdownTimer = 0f;
@@ -26,10 +27,12 @@ public class Enemy2Controller : MonoBehaviour
     private LineRenderer lineRenderer;
     private Transform player;
 
+    private Vector2 moveDirection; // NEW: tracks movement direction
+
     public bool IsPlayerDetected => playerDetected;
 
     // --- PLAYER LOST ---
-    public void PlayerLost() // in the scenario that the player is not detected by the dog
+    public void PlayerLost()
     {
         playerDetected = false;
         countdownTimer = 0f;
@@ -39,42 +42,45 @@ public class Enemy2Controller : MonoBehaviour
     }
 
     // --- START ---
-    void Start() 
+    void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>(); // draw the dog's path
+        lineRenderer = GetComponent<LineRenderer>();
         DrawPath();
 
         if (countdownText != null)
             countdownText.text = "";
 
-        // finds the player (currently in a different scene)
-        GameObject playerObj = GameObject.FindWithTag("Player"); 
+        GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
         {
             player = playerObj.transform;
         }
         else
         {
-            Debug.LogWarning("Enemy2Controller: Player not found! Ensure Player is tagged 'Player'.");
+            Debug.LogWarning("Enemy2Controller: Player not found!");
         }
     }
 
     // --- UPDATE ---
-    void Update() // lists the scenarios that must be checked each frame
+    void Update()
     {
         Patrol();
         DetectPlayer();
         UpdateCountdown();
     }
 
-    void Patrol() // runs the dog's patrol mechanic
+    // --- PATROL ---
+    void Patrol()
     {
         if (playerDetected) return;
         if (patrolPoints.Length == 0) return;
 
         Transform target = patrolPoints[currentPoint];
-        Vector3 direction = (target.position - transform.position).normalized;
-        transform.position += direction * patrolSpeed * Time.deltaTime;
+
+        // 🔥 Track movement direction
+        moveDirection = (target.position - transform.position).normalized;
+
+        transform.position += (Vector3)moveDirection * patrolSpeed * Time.deltaTime;
 
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
@@ -82,28 +88,30 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    void DetectPlayer() // check if player is in front and nearby
+    // --- DETECTION (DIRECTIONAL + LINE OF SIGHT) ---
+    void DetectPlayer()
     {
         if (player == null) return;
 
-        Vector2 direction = (player.position - transform.position).normalized;
+        Vector2 toPlayer = (player.position - transform.position).normalized;
         float distance = Vector2.Distance(transform.position, player.position);
 
-        bool playerAbove = player.position.y > transform.position.y; // defines what "above" means
+        // 🔥 Check if player is in front of movement
+        float dot = Vector2.Dot(moveDirection, toPlayer);
 
-        if (distance <= detectionRadius && playerAbove)
+        if (distance <= detectionRadius && dot > visionThreshold)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRadius);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, detectionRadius);
 
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
                 if (!playerDetected)
                 {
                     playerDetected = true;
-                    countdownTimer = countdownDuration; // starts countdown
+                    countdownTimer = countdownDuration;
 
                     if (alertAudio != null)
-                        alertAudio.Play(); // dog barks
+                        alertAudio.Play();
                 }
             }
             else
@@ -119,11 +127,12 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    void UpdateCountdown() // manages the countdown
+    // --- COUNTDOWN ---
+    void UpdateCountdown()
     {
         if (!playerDetected) return;
 
-        countdownTimer -= Time.deltaTime; // subtract by one second
+        countdownTimer -= Time.deltaTime;
 
         if (countdownText != null)
             countdownText.text = Mathf.Ceil(countdownTimer).ToString();
@@ -134,7 +143,8 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    void DrawPath() // draws the patrol path
+    // --- DRAW PATROL PATH ---
+    void DrawPath()
     {
         if (patrolPoints == null || patrolPoints.Length == 0 || lineRenderer == null)
             return;
@@ -147,16 +157,15 @@ public class Enemy2Controller : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected() // debug visuals
+    // --- GIZMOS (DEBUG) ---
+    private void OnDrawGizmosSelected()
     {
         // Detection radius
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
 
-        if (player != null) // line to the player
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, player.position);
-        }
+        // Direction line
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position, transform.position + (Vector3)moveDirection * detectionRadius);
     }
 }
