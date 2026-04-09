@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61783f99b6600764891aab0a85c810f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuardMovement
+  _speed: 0
+  _rotationSpeed: 0
 --- !u!1 &535894899
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61783f99b6600764891aab0a85c810f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuardMovement
+  _speed: 1
+  _rotationSpeed: 100
 --- !u!114 &1235162060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d349c0d01bf8e14a97525640dfb0327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAwarenessController
-  _playerAwarenessDistance: 0
+  _playerAwarenessDistance: 5
 --- !u!1 &1634116329
 GameObject:
   m_ObjectHideFlags: 0
