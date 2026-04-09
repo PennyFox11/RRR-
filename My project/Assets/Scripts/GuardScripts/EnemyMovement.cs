@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _playerAwarenessController = GetComponent<_playerAwarenessController>();
+        _playerAwarenessController = GetComponent<PlayerAwarenessController>();
     }
 
     private void FixedUpdate()
