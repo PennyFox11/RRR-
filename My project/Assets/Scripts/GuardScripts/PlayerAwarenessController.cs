@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerAwarenessController : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform player;
     public bool AwareOfPlayer { get; private set; }
 
     public Vector2 DirectionToPlayer { get; private set; }
@@ -13,6 +11,10 @@ public class PlayerAwarenessController : MonoBehaviour
 
     private Transform _player;
 
+    private void Awake()
+    {
+        _player = FindObjectOfType<PlayerMove>().transform;
+    }
     // Update is called once per frame
     void Update()
     {
