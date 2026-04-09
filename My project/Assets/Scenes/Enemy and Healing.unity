@@ -129,8 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 402175096}
   - component: {fileID: 402175095}
-  - component: {fileID: 402175099}
-  - component: {fileID: 402175098}
   - component: {fileID: 402175097}
   m_Layer: 0
   m_Name: Main Camera
@@ -249,33 +247,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &402175098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402175093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d349c0d01bf8e14a97525640dfb0327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAwarenessController
-  _playerAwarenessDistance: 0
---- !u!114 &402175099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402175093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61783f99b6600764891aab0a85c810f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuardMovement
-  _speed: 0
-  _rotationSpeed: 0
 --- !u!1 &535894899
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,8 +526,8 @@ Transform:
   m_GameObject: {fileID: 1235162055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.19, y: 2.98, z: 0}
-  m_LocalScale: {x: 0.119047605, y: 0.13072759, z: 1}
+  m_LocalPosition: {x: 7.1535, y: 2.9983, z: 0}
+  m_LocalScale: {x: 0.13934426, y: 0.13676721, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 915717391}
@@ -607,8 +578,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -922867533
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5680844550718965621, guid: 058114a8392fb1e40ba97fa5fe602c2a, type: 3}
@@ -647,6 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d349c0d01bf8e14a97525640dfb0327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAwarenessController
+  player: {fileID: 0}
   _playerAwarenessDistance: 5
 --- !u!1 &1634116329
 GameObject:
