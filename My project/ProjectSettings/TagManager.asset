@@ -16,8 +16,8 @@ TagManager:
   - 'collision '
   - player
   - walk behind
-  - 
-  - 
+  - enemy
+  - enemyblocker
   - 
   - 
   - 
