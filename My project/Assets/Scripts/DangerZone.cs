@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class DangerZone : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
+        PlayerHealth health = other.GetComponent<PlayerHealth>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (health != null)
+        {
+            health.ChangeHealth(-1);
+        }
     }
 }
