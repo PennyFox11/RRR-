@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int maxHealth = 70; 
    [SerializeField] public int currentHealth; 
 
+   public HealthBar healthBar;
+
    public float timeInvincible = 2.0f;
    bool isInvincible;
    float damageCooldown;
@@ -17,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        //UpdateHealthBar();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void ChangeHealth (int amount)
@@ -33,6 +35,8 @@ public class PlayerHealth : MonoBehaviour
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
+        
+        healthBar.SetHealth(currentHealth);
     }
 
     void Update()
