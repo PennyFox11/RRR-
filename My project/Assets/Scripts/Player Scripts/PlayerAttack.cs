@@ -8,6 +8,10 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
+
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask enemyLayers;
+    [SerializeField] private int damage = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,6 +42,25 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
-        attackArea.SetActive(attacking);
+        attackArea.SetActive(true);
+
+        BoxCollider2D box = attackArea.GetComponent<BoxCollider2D>();
+
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(
+            attackPoint.position,
+            box.size,
+            0f,
+            enemyLayers
+        );
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            GuardHealth guardHealth = enemy.GetComponent<GuardHealth>();
+
+            if (guardHealth != null)
+            {
+                guardHealth.ChangeHealth(-damage);
+            }
+        }
     }
 }
