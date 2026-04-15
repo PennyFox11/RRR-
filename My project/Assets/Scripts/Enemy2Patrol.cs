@@ -10,6 +10,8 @@ public class Enemy2Patrol : MonoBehaviour
     public int targetPoint;
     [SerializeField]
     public float speed;
+
+    public bool isPaused = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +21,11 @@ public class Enemy2Patrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPaused)
+        {
+            return;
+        }
+        
         if(transform.position == patrolPoints[targetPoint].position)
         {
             increaseTargetInt();

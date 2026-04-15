@@ -1,4 +1,5 @@
-////https://www.youtube.com/watch?v=E7-HAJ4Db64
+//https://www.youtube.com/watch?v=E7-HAJ4Db64
+//https://docs.unity3d.com/ScriptReference/AudioSource.html
 using UnityEngine;
 
 public class DogBark : MonoBehaviour
@@ -12,11 +13,22 @@ public class DogBark : MonoBehaviour
         soundTrigger = GetComponent<Collider2D>();
     }
    
-   void OnTriggerStay2D(Collider2D collider)
+   void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.CompareTag("Player"))
         {
-            source.Play();
+            if (!source.isPlaying)
+            {
+                source.Play();
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            source.Stop();
         }
     }
 }
