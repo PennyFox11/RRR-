@@ -10,12 +10,11 @@ public class PlayerAwarenessController : MonoBehaviour
     private float _playerAwarenessDistance;
 
     private Transform _player;
-    
+
     private void Awake()
     {
         _player = FindObjectOfType<PlayerMove>().transform;
     }
-
     // Update is called once per frame
     void Update()
     {
