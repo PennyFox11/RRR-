@@ -1,7 +1,12 @@
+// https://www.youtube.com/watch?v=ChE7u5EdR-U
+// https://docs.unity3d.com/cn/current/ScriptReference/Physics2D.OverlapBoxAll.html?utm_source=chatgpt.com
+// https://learn.unity.com/ 
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    AudioSource source;
+    
     private GameObject attackArea = default;
 
     private bool attacking = false;
@@ -16,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         attackArea = transform.GetChild(0).gameObject;
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -60,6 +66,11 @@ public class PlayerAttack : MonoBehaviour
             if (guardHealth != null)
             {
                 guardHealth.ChangeHealth(-damage);
+
+                if(!source.isPlaying)
+                {
+                    source.Play();
+                }
             }
         }
     }
