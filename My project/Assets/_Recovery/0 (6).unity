@@ -358,7 +358,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 2048
-  damage: 10
+  damage: 3
 --- !u!82 &237518565
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14672,20 +14672,12 @@ PrefabInstance:
       value: First aid kit
       objectReference: {fileID: 0}
     - target: {fileID: 7361271929096960465, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.18053848
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361271929096960465, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.17826739
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361271929096960465, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.1171
+      value: 12.0204
       objectReference: {fileID: 0}
     - target: {fileID: 7361271929096960465, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4438
+      value: 0.3528
       objectReference: {fileID: 0}
     - target: {fileID: 7361271929096960465, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14832,7 +14824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2292524899215072081, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4116927372942164185, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
       propertyPath: m_LocalScale.x

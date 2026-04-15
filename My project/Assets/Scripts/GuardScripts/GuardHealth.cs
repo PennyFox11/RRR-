@@ -21,11 +21,16 @@ public class GuardHealth : MonoBehaviour
         Debug.Log(currentHealth + "/" + maxHealth);
 
         healthBar2.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void Die()
     {
-        
+        Destroy(gameObject);
     }
 }

@@ -16,7 +16,7 @@ public class DangerZone : MonoBehaviour
 
         if (health != null)
         {
-            health.ChangeHealth(-1);
+            health.ChangeHealth(-10);
 
             if(!source.isPlaying)
             {
