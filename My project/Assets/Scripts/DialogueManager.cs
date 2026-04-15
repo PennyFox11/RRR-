@@ -8,8 +8,6 @@ public class DialogueManager : MonoBehaviour
     public Text NameText;
     public Text DialogueText;
 
-    public Animator animator;
-
     private Queue<string> sentences;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +18,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
 
         NameText.text = dialogue.name;
 
@@ -43,22 +40,11 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-    }
-
-    IEnumerator TypeSentence(string sentence)
-    {
-        DialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
-        {
-            DialogueText.text += letter;
-            yield return null;
-        }
+        DialogueText.text = sentence;
     }
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        Debug.Log("End of conversation");
     }
 }
