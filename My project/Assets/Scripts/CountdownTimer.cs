@@ -1,6 +1,7 @@
 //https://discussions.unity.com/t/timer-on-trigger-events-2d/789369
 //https://discussions.unity.com/t/can-someone-help-me-make-a-countdown-timer-for-c-i-just-need-help-making-a-countdown-timer/256846/2 
 //https://docs.unity3d.com/6000.3/Documentation/Manual/collider-interactions-ontrigger.html 
+//https://www.youtube.com/watch?v=ZfRbuOCAeE8 
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +28,7 @@ public class CountdownTimer : MonoBehaviour
             countdownTime -= Time.deltaTime;
             DisplayTime(countdownTime);
         }
-        else if (countdownTime <= 0)
+        else if (countdownTime <= 0 && isTimerRunning)
         {
             countdownTime = 0;
             isTimerRunning = false;
@@ -64,5 +65,7 @@ public class CountdownTimer : MonoBehaviour
     {
         Debug.Log("Time is up!");
         timerText.gameObject.SetActive(false);
+
+        PlayerHealth.TriggerGameOver();
     }
 }
