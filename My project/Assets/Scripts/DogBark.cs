@@ -1,5 +1,14 @@
-//https://www.youtube.com/watch?v=E7-HAJ4Db64
-//https://docs.unity3d.com/ScriptReference/AudioSource.html
+//Title: Play Sound Effects on Trigger Events ~ Unity 2022.1 Tutorial
+//Author: Chris' Tutorials
+//Date: 10 October 2022
+//Code version: Unity 2022.1.19f1
+//Availability: https://www.youtube.com/watch?v=E7-HAJ4Db64
+
+//Title: AudioSource
+//Author: Unity Documentation
+//Date: 17 April 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/AudioSource.html
 using UnityEngine;
 
 public class DogBark : MonoBehaviour

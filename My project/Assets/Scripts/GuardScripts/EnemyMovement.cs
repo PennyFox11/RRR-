@@ -1,8 +1,19 @@
 //Title: Creating Simple Enemy AI to Chase the Player (Unity Tutorial | 2D Top Down Shooter)
 //Author: Ketra Games
 // Date: 12 December 2022
+//Code version: Unity 2021.3.11f1
 // Availability: https://www.youtube.com/watch?v=XHrWtLZtzy8
-// How I programmed enemy return function: https://discussions.unity.com/t/solved-make-enemy-move-back-to-start-position/633065 
+
+// Title: [Solved] Make enemy move back to start position
+//Author: Unity Discussions
+//Date: 13 July 2016
+// https://discussions.unity.com/t/solved-make-enemy-move-back-to-start-position/633065 
+
+//Title: Vector3.normalized
+//Author: Unity Documentation
+//Date: 17 April 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/Vector3-normalized.html
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -50,9 +61,9 @@ public class EnemyMovement : MonoBehaviour
         {
             Vector2 directionToStart = (startPosition - transform.position);
 
-            if (directionToStart.magnitude > 0.1f) // prevent jitter
+            if (directionToStart.magnitude > 0.1f) 
             {
-               _targetDirection = directionToStart.normalized; // https://docs.unity3d.com/ScriptReference/Vector3-normalized.html
+               _targetDirection = directionToStart.normalized; 
             }
             else
             {
