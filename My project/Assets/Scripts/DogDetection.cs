@@ -1,3 +1,7 @@
+//Title: OnTriggerEnter/OnTriggerExit mechanics
+//Author: Unity Discussions
+//Date: June 2021
+//Availability: https://discussions.unity.com/t/ontriggerenter-ontriggerexit-mechanics/844873
 using UnityEngine;
 
 public class DogDetection : MonoBehaviour

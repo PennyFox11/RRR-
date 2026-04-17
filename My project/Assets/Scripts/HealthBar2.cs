@@ -1,4 +1,7 @@
-//https://www.youtube.com/watch?v=BLfNP4Sc_iA
+//Title: How to make a HEALTH BAR in Unity!
+//Author: Brackeys
+//Date: 9 February 2020
+//Availability: https://www.youtube.com/watch?v=BLfNP4Sc_iA
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,5 +20,4 @@ public class HealthBar2 : MonoBehaviour
     {
         slider.value = health;
     }
-
 }

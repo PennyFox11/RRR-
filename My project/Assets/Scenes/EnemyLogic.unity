@@ -2907,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 943488409}
     - target: {fileID: 393550984040901950, guid: e6a8895eafc2f854abe92da56cc5125c, type: 3}
       propertyPath: timeInvincible
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1211693032303393204, guid: e6a8895eafc2f854abe92da56cc5125c, type: 3}
       propertyPath: Rigidbody
@@ -13623,6 +13623,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8389259287579801601, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
+      propertyPath: _speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389259287579801601, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -16972,7 +16976,7 @@ MonoBehaviour:
   - {fileID: 1249211474}
   - {fileID: 1326475220}
   targetPoint: 0
-  speed: 1
+  speed: 1.5
   isPaused: 0
 --- !u!4 &2130917405
 Transform:

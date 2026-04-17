@@ -1,3 +1,7 @@
+//Title: Create a health collectible using triggers
+//Author: Unity Learn
+//Date: 2026
+//Availability: https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/create-a-health-collectible-using-triggers?version=6.3
 using UnityEngine;
 
 public class Healing : MonoBehaviour

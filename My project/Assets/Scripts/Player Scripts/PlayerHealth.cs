@@ -3,10 +3,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/set-up-a-basic-health-system?version=6.3#6932d32bd5bfab44ab132cdd
-//https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/add-damage-zones-to-decrease-health-static-hazards?version=6.3
-// https://www.youtube.com/watch?v=BLfNP4Sc_iA 
-//https://www.youtube.com/watch?v=ZfRbuOCAeE8 
+//Title: Set up a basic health system
+//Author: Unity Learn
+//Date: 2026
+// Code vesrion: 6000.3.8f1
+//Availability: https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/set-up-a-basic-health-system?version=6.3#6932d32bd5bfab44ab132cdd
+
+//Title: Add damage zones to decrease health (static hazards)
+//Author: Unity Learn
+//Date: 2026
+//Code version: 6000.3.8f1
+//Availability: https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/add-damage-zones-to-decrease-health-static-hazards?version=6.3
+
+//Title: How to make a HEALTH BAR in Unity!
+//Author: Brackeys
+//Date: 9 February 2026
+//Code version: 2019.3.0f6
+//Availability: https://www.youtube.com/watch?v=BLfNP4Sc_iA 
+
+//Title: GAME OVER Menu In Unity Tutorial 
+//Author: BMo
+//Date: 17 March 2022
+//Code version: 2020.3.22f1
+//Availability: https://www.youtube.com/watch?v=ZfRbuOCAeE8 
 public class PlayerHealth : MonoBehaviour
 {
     public static event Action OnPlayerDeath;

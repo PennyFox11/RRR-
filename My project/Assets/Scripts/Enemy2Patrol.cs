@@ -2,6 +2,11 @@
 // Author: MoreBBlakeyyy
 // Date: 14 October 2022
 // Availability: https://www.youtube.com/watch?v=4mzbDk4Wsmk 
+
+//Title: OnTriggerEnter/OnTriggerExit mechanics
+//Author: Unity Discussions
+//Date: June 2021
+//Availability: https://discussions.unity.com/t/ontriggerenter-ontriggerexit-mechanics/844873 
 using UnityEngine;
 
 public class Enemy2Patrol : MonoBehaviour

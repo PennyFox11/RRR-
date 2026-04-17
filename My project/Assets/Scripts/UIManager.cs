@@ -1,4 +1,8 @@
-//https://www.youtube.com/watch?v=ZfRbuOCAeE8
+//Title: GAME OVER Menu In Unity Tutorial
+//Author: BMo
+//Date: 17 March 2022
+//Code version: 2020.3.22f1
+//Availability: https://www.youtube.com/watch?v=ZfRbuOCAeE8
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
