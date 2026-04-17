@@ -19,26 +19,26 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 
-    private Vector3 startPosition;
+    private Vector3 startPosition; //setting a position as a "Vector"
     
     [SerializeField]
-    private float _speed;
+    private float _speed; //make the variable of speed, "SerializeField" to adjust it in inspector even when it's private
 
     [SerializeField]
-    private float _rotationSpeed;
+    private float _rotationSpeed; // make the variable of rotation speed (how fast the enemy turns), made adjustable in inspector even though it's private
 
     [SerializeField]
-    private float _returnSpeed;
+    private float _returnSpeed; //make variable of return speed (how fast enemy returns to its start position), can adjust in inspector
 
-    private Rigidbody2D _rigidbody;
-    private PlayerAwarenessController _playerAwarenessController;
-    private Vector2 _targetDirection;
+    private Rigidbody2D _rigidbody; // references the objects rigidbody component to apply forces to game object and control it
+    private PlayerAwarenessController _playerAwarenessController; //calls another script that detects player
+    private Vector2 _targetDirection; //establish a 2D position as target
 
-    void Start()
+    void Start() //when game starts, instantiate object in scene so it can move on change
     {
-        startPosition = transform.position;
+        startPosition = transform.position; 
     }
-    private void Awake()
+    private void Awake() //Functions like "Void Start", initializes variables (in this case, rigidbody and PlayerAwarenessController script)
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
