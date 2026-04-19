@@ -8,25 +8,25 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject gameOverMenu;
+    public GameObject gameOverMenu; //reference the game over screen
 
-    private void OnEnable()
+    private void OnEnable() //subscribe to player death event
     {
         PlayerHealth.OnPlayerDeath += EnableGameOverMenu;
     }
 
-    private void OnDisable()
+    private void OnDisable() //unsubscribe to player death event
     {
         PlayerHealth.OnPlayerDeath -= EnableGameOverMenu;
     }
 
-    public void EnableGameOverMenu()
+    public void EnableGameOverMenu() //method that enables the game over menu
     {
         gameOverMenu.SetActive(true);
     }
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //restart the scene that is currently active
     }
 }

@@ -44,14 +44,14 @@ public class EnemyMovement : MonoBehaviour
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() //update at regular, fixed intervals
     {
         UpdateTargetDirection();
         RotateTowardsTarget();
         SetVelocity();
     }
 
-    private void UpdateTargetDirection()
+    private void UpdateTargetDirection() //if the player is a certain distance from the enemy, the enemy will move in the player's direction
     {
         if (_playerAwarenessController.AwareOfPlayer)
         {
@@ -72,7 +72,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void RotateTowardsTarget()
+    private void RotateTowardsTarget() // the enemy sprite will rotate towards the player as it pursues the player
     {
         if (_targetDirection == Vector2.zero)
         {
@@ -85,7 +85,7 @@ public class EnemyMovement : MonoBehaviour
         _rigidbody.SetRotation(rotation);
     }
 
-    private void SetVelocity()
+    private void SetVelocity() // the velicoty at which the enemy chases the player
     {
         if (_targetDirection == Vector2.zero)
         {

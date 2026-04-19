@@ -8,6 +8,6 @@ public class EnemyBillboardUI : MonoBehaviour
 {
     void LateUpdate()
     {
-        transform.rotation = Quaternion.identity;
+        transform.rotation = Quaternion.identity; //ensure enemy health bar remains in a fixed position above the enemy sprite
     }
 }

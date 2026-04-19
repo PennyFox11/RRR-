@@ -13,23 +13,23 @@ using UnityEngine;
 
 public class DogBark : MonoBehaviour
 {
-    AudioSource source;
-    Collider2D soundTrigger;
+    AudioSource source; 
+    Collider2D soundTrigger; //name collider component
 
     bool gameOver = false;
 
     void Awake()
     {
-        source = GetComponent<AudioSource>();
-        soundTrigger = GetComponent<Collider2D>();
+        source = GetComponent<AudioSource>(); //get the audio source
+        soundTrigger = GetComponent<Collider2D>(); //get the collider
     }
 
-    void OnEnable()
+    void OnEnable() //refers to game over function
     {
         PlayerHealth.OnPlayerDeath += HandleGameOver;
     }
 
-    void OnDisable()
+    void OnDisable() //refers to game over function
     {
         PlayerHealth.OnPlayerDeath -= HandleGameOver;
     }
@@ -37,25 +37,25 @@ public class DogBark : MonoBehaviour
     void HandleGameOver()
     {
         gameOver = true;
-        source.Stop();
+        source.Stop(); //if the player dies, stop playing the audio
     }
-   void OnTriggerEnter2D(Collider2D collider)
+   void OnTriggerEnter2D(Collider2D collider) //if another collider enters
     {
-        if (gameOver)
+        if (gameOver) //exit function if the game is over
         {
             return;
         }
         
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag("Player")) //if collider that enters has the 'player' tag
         {
             if (!source.isPlaying)
             {
-                source.Play();
+                source.Play(); //play audio source
             }
         }
     }
 
-    void OnTriggerExit2D(Collider2D collider)
+    void OnTriggerExit2D(Collider2D collider) //if player exits, stop playing the audio
     {
         if (collider.CompareTag("Player"))
         {
