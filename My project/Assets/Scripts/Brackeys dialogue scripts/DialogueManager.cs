@@ -8,7 +8,19 @@ public class DialogueManager : MonoBehaviour
     public Text NameText;
     public Text DialogueText;
 
-    public Animator animator;
+    public Animator anim;
+
+    public void PlayDialogue()
+    {
+        if (anim != null)
+        {
+            anim.Play("DialogueBox_Open");
+        }
+        else
+        {
+            Debug.LogError("Animator not assigned!");
+        }
+    }
 
     private Queue<string> sentences;
 
@@ -18,9 +30,9 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue (Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
+        anim.SetBool("IsOpen", true);
 
         NameText.text = dialogue.name;
 
@@ -43,6 +55,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        DialogueText.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -59,6 +72,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        anim.SetBool("IsOpen", false);
     }
 }
