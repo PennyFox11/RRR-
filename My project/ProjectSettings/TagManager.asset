@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - item
+  - door
   layers:
   - Default
   - TransparentFX
@@ -70,6 +71,9 @@ TagManager:
     uniqueID: 3372099763
     locked: 0
   - name: walk behind
+    uniqueID: 1715852939
+    locked: 0
+  - name: border
     uniqueID: 2585647283
     locked: 0
   m_RenderingLayers:
