@@ -37,4 +37,6 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     }
 }
 
+}
+
 
