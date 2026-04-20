@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject gameOverMenu; //reference the game over screen
+    internal static object instance;
 
     private void OnEnable() //subscribe to player death event
     {

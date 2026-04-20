@@ -5,12 +5,19 @@ using TMPro;
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
 {
-
-    public int diamondCount;
     public int NumberOfDiamonds = 0;
     private int maxDiamonds = 3;
+    private int maxKey = 1;
     public TextMeshProUGUI diamondText;
     public int NumberOfKeys;
+    public TextMeshProUGUI keyText;
+
+    void Update()
+    {
+        diamondText.text = NumberOfDiamonds.ToString() + " /3";
+
+        keyText.text = NumberOfKeys.ToString() + " /1";
+    }
 
     public void DiamondCollected()
     {
@@ -20,23 +27,19 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
         {
             Debug.Log("You collected all of them");
         }
-        void Update()
-        {
-            diamondText.text = " 0:" + NumberOfDiamonds.ToString();
-
-
-        }
     }
     public void KeyCollected()
     {
-        NumberOfKeys = 1;
-        if (NumberOfKeys == 1)
+        NumberOfKeys++;
+        if (maxKey >= 1)
         {
             Debug.Log("Congratulations you have passed");
         }
     }
-}
 
 }
+
+
+
 
 
