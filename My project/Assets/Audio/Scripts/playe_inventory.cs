@@ -20,11 +20,11 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
         {
             Debug.Log("You collected all of them");
         }
-         void Update ()
+        void Update()
         {
             diamondText.text = " 0:" + NumberOfDiamonds.ToString();
-            
-            
+
+
         }
     }
     public void KeyCollected()
@@ -35,5 +35,6 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
             Debug.Log("Congratulations you have passed");
         }
     }
+}
 
 
