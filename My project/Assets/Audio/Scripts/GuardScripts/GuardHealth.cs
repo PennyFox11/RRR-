@@ -38,6 +38,7 @@ public class GuardHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            Destroy(door);
         }
     }
 
@@ -45,6 +46,5 @@ public class GuardHealth : MonoBehaviour
     void Die() //enemy vanishes when health is zero
     {
         Destroy(gameObject);
-        Destroy(door);
     }
 }
