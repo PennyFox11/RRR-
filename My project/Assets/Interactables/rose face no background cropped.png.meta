@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 50c91162fdd586747b09baa7980f7ec8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 498716442052457649
+    second: rose face no background cropped_0
+  - first:
+      213: -2891188593997528630
+    second: rose face no background cropped_1
+  - first:
+      213: 1346352358106834912
+    second: rose face no background cropped_2
+  - first:
+      213: -6944581735285982076
+    second: rose face no background cropped_3
+  - first:
+      213: 1145499593608567384
+    second: rose face no background cropped_4
+  - first:
+      213: -7095461970041199021
+    second: rose face no background cropped_5
+  - first:
+      213: 3936035534006810444
+    second: rose face no background cropped_6
+  - first:
+      213: 10973334764366794
+    second: rose face no background cropped_7
+  - first:
+      213: -2337478996310956760
+    second: rose face no background cropped_8
+  - first:
+      213: -4475116431079333625
+    second: rose face no background cropped_9
+  - first:
+      213: 4774158506253365351
+    second: rose face no background cropped_10
+  - first:
+      213: 3007599706480619884
+    second: rose face no background cropped_11
+  - first:
+      213: 3632060802609018484
+    second: rose face no background cropped_12
+  - first:
+      213: 8212953680487670731
+    second: rose face no background cropped_13
+  - first:
+      213: 2757085261063229734
+    second: rose face no background cropped_14
+  - first:
+      213: -4282239050524410664
+    second: rose face no background cropped_15
+  - first:
+      213: -7996946838479062747
+    second: rose face no background cropped_16
+  - first:
+      213: 2177166562505366224
+    second: rose face no background cropped_17
+  - first:
+      213: -2237087054936005843
+    second: rose face no background cropped_18
+  - first:
+      213: -7252054632834956632
+    second: rose face no background cropped_19
+  - first:
+      213: 4245965115257869074
+    second: rose face no background cropped_20
+  - first:
+      213: -4827239377901243000
+    second: rose face no background cropped_21
+  - first:
+      213: -6743231975304492971
+    second: rose face no background cropped_22
+  - first:
+      213: 8617415504126577119
+    second: rose face no background cropped_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rose face no background cropped_0
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 943
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4fe2436fbcbe600800000000000000
+      internalID: 498716442052457649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_1
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1031
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1cd1cba4f60e7d0800000000000000
+      internalID: -2891188593997528630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_2
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 808
+        width: 267
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7a77f16543fa210800000000000000
+      internalID: 1346352358106834912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_3
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1025
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cfc9aa4b3ef9f90800000000000000
+      internalID: -6944581735285982076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_4
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1030
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a946fafc1a5ef00800000000000000
+      internalID: 1145499593608567384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_5
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 1022
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356a66e7eead78d90800000000000000
+      internalID: -7095461970041199021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 1160
+        height: 1025
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c477ac3d67b9f9630800000000000000
+      internalID: 3936035534006810444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_7
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 975
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acba1a8903cf62000800000000000000
+      internalID: 10973334764366794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_8
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 957
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825e2f2cc3b9f8fd0800000000000000
+      internalID: -2337478996310956760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_9
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 933
+        width: 151
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701a00de05135e1c0800000000000000
+      internalID: -4475116431079333625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_10
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 627
+        width: 256
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76034aaedd7314240800000000000000
+      internalID: 4774158506253365351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_11
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 911
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61b8538ff32db920800000000000000
+      internalID: 3007599706480619884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_12
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 807
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47671267e0ca76230800000000000000
+      internalID: 3632060802609018484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_13
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 682
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3643abbd54af170800000000000000
+      internalID: 8212953680487670731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_14
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 696
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6219321ff62234620800000000000000
+      internalID: 2757085261063229734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_15
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 507
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcbf26954e6294c0800000000000000
+      internalID: -4282239050524410664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_16
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 502
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529b5c45833250190800000000000000
+      internalID: -7996946838479062747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_17
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 519
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da9df61479d63e10800000000000000
+      internalID: 2177166562505366224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_18
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 423
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d232ae61d2544f0e0800000000000000
+      internalID: -2237087054936005843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_19
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 499
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a285260cb68b5b90800000000000000
+      internalID: -7252054632834956632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 381
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21355a7b6c2bcea30800000000000000
+      internalID: 4245965115257869074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_21
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 413
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8853b629c53320db0800000000000000
+      internalID: -4827239377901243000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_22
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 195
+        width: 161
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5588be1ee3a3b62a0800000000000000
+      internalID: -6743231975304492971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose face no background cropped_23
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 0
+        width: 180
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd988657eb5379770800000000000000
+      internalID: 8617415504126577119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rose face no background cropped_0: 498716442052457649
+      rose face no background cropped_1: -2891188593997528630
+      rose face no background cropped_10: 4774158506253365351
+      rose face no background cropped_11: 3007599706480619884
+      rose face no background cropped_12: 3632060802609018484
+      rose face no background cropped_13: 8212953680487670731
+      rose face no background cropped_14: 2757085261063229734
+      rose face no background cropped_15: -4282239050524410664
+      rose face no background cropped_16: -7996946838479062747
+      rose face no background cropped_17: 2177166562505366224
+      rose face no background cropped_18: -2237087054936005843
+      rose face no background cropped_19: -7252054632834956632
+      rose face no background cropped_2: 1346352358106834912
+      rose face no background cropped_20: 4245965115257869074
+      rose face no background cropped_21: -4827239377901243000
+      rose face no background cropped_22: -6743231975304492971
+      rose face no background cropped_23: 8617415504126577119
+      rose face no background cropped_3: -6944581735285982076
+      rose face no background cropped_4: 1145499593608567384
+      rose face no background cropped_5: -7095461970041199021
+      rose face no background cropped_6: 3936035534006810444
+      rose face no background cropped_7: 10973334764366794
+      rose face no background cropped_8: -2337478996310956760
+      rose face no background cropped_9: -4475116431079333625
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

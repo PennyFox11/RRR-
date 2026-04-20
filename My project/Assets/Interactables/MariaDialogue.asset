@@ -19,13 +19,14 @@ MonoBehaviour:
   - I'm sure you've come back for poor Iris. Well you must be careful.
   - There are hounds all over. Avoid being seen by them.
   - If you do get noticed, you'll have 5 seconds to get away from them before they
-    alert the guards.
-  - There is a guard just across the wing. Defeat him to get a key, that key will
-    be needed to free Iris.
+    alert the guards. .
+  - Then it's really over for you.
+  - There is a guard just across the wing. Click SPACE to attack him. Once he's defeated,
+    you will get  a key, that key will be needed to free Iris.
   - If you get injured during combat, there's a first aid kit in the bathroom.
-  - 'ALSO Signora, collect the diamonds scattered in some of the rooms. '
+  - 'ALSO Signora, collect the diamonds scattered in some of the rooms.  '
   - It doesn't to collect your alimony a little early, right? ;)
-  autoProgressLines: 0101010101010101
+  autoProgressLines: 01010101010101010100
   autoProgressDisplay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: b8549acc585cb1444afe2f6e923b2d54, type: 3}

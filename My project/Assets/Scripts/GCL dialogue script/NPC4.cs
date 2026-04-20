@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class NPC : MonoBehaviour, IInteractable
+public class NPC4 : MonoBehaviour, IInteractable
 {
     public NPCDialogue dialogueData;
     public GameObject dialoguePanel;
@@ -49,7 +49,7 @@ public class NPC : MonoBehaviour, IInteractable
         nameText.text = dialogueData.npcName;
         portraitImage.sprite = dialogueData.npcPortrait;
 
-        dialoguePanel.SetActive(true);
+        //dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
 
         StartCoroutine(TypeLine());
@@ -78,27 +78,27 @@ public class NPC : MonoBehaviour, IInteractable
     }
 
 
-        IEnumerator TypeLine()
+    IEnumerator TypeLine()
+    {
+        isTyping = true;
+        dialogueText.text = "";
+
+        foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
         {
-            isTyping = true;
-            dialogueText.text = "";
-
-            foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
-            {
-                dialogueText.text += letter;
-                yield return new WaitForSeconds(dialogueData.typingSpeed); //Dialogue text speed, types out every letter at a specific rate
-            }
-
-            isTyping = false; //Dialogue line is complete
-
-            if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
-            {
-                yield return new WaitForSeconds(dialogueData.autoProgressDisplay);
-                NextLine();
-            }
-
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(dialogueData.typingSpeed); //Dialogue text speed, types out every letter at a specific rate
         }
-           
+
+        isTyping = false; //Dialogue line is complete
+
+        if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
+        {
+            yield return new WaitForSeconds(dialogueData.autoProgressDisplay);
+            NextLine();
+        }
+
+    }
+
 
     public void EndDialogue() //The end dialogue button to exit dialogue
     {
@@ -106,8 +106,7 @@ public class NPC : MonoBehaviour, IInteractable
         isDialogueActive = false;
         dialogueText.text = "";
         dialoguePanel.SetActive(false);
-        
+
     }
 
 }
-

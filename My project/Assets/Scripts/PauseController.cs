@@ -2,6 +2,8 @@
 //Author: Game Code Library
 //Date: 11 February 2025
 //Availability: https://www.youtube.com/watch?v=fspxIduosYQ
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseController : MonoBehaviour

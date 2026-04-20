@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - player
+  - Maria
+  - Bathtub
+  - PatioTable
+  - Car
   layers:
   - Default
   - TransparentFX
