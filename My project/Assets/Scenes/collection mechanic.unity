@@ -811,6 +811,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1242723258452728750, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431075100295818367, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293836854812076249, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6013774516886075174, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
       propertyPath: m_Name
       value: EnemyRestriction
@@ -853,6 +865,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606104140091018220, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348415415709512714, guid: 54b390e1f9bd818499858aa459990efb, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1379,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22352fb60f42bcf4d829b54a10909224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuardHealth
-  door: {fileID: 0}
+  door: {fileID: 1361613980}
   maxHealth: 50
   currentHealth: 0
   healthBar2: {fileID: 1351869800}
@@ -47002,7 +47018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8389259287579801601, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
       propertyPath: _speed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8389259287579801601, guid: b45af31ed1156074e839aa61acae9c1d, type: 3}
       propertyPath: m_Enabled
@@ -62175,11 +62191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbffd2f7a1f8cb14594c319725485d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 1632326671}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
-  damage: 3
+    m_Bits: 2048
+  damage: 10
 --- !u!114 &7757818255490258114
 MonoBehaviour:
   m_ObjectHideFlags: 0
