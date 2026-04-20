@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
 {
+    public static event Action OnKeyCollected;
     public int NumberOfDiamonds = 0;
     private int maxDiamonds = 3;
     private int maxKey = 1;
@@ -34,6 +36,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
         if (maxKey >= 1)
         {
             Debug.Log("Congratulations you have passed");
+            OnKeyCollected?.Invoke();
         }
     }
 
