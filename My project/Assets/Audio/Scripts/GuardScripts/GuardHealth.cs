@@ -13,6 +13,10 @@ using UnityEngine;
 
 public class GuardHealth : MonoBehaviour
 {
+    public GameObject door;
+    
+    private bool doorDestroyed;
+    
     [SerializeField] public int maxHealth = 50; //adjust this in the inspector; public and can be accessed from other scripts
     [SerializeField] int currentHealth; // adjust in inspector
 
@@ -41,5 +45,6 @@ public class GuardHealth : MonoBehaviour
     void Die() //enemy vanishes when health is zero
     {
         Destroy(gameObject);
+        Destroy(door);
     }
 }

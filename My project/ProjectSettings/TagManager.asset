@@ -6,6 +6,7 @@ TagManager:
   tags:
   - item
   - door
+  - weapon
   layers:
   - Default
   - TransparentFX
@@ -75,6 +76,9 @@ TagManager:
     locked: 0
   - name: border
     uniqueID: 2585647283
+    locked: 0
+  - name: weapon
+    uniqueID: 3506701859
     locked: 0
   m_RenderingLayers:
   - Default
