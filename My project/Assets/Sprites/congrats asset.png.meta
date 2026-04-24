@@ -1,0 +1,2275 @@
+fileFormatVersion: 2
+guid: c6e30732c8186df46b7bc4f36f7d944e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7972855641806995139
+    second: congrats asset_0
+  - first:
+      213: -4611154151120637807
+    second: congrats asset_1
+  - first:
+      213: -2572707004229127646
+    second: congrats asset_2
+  - first:
+      213: 7970438327045414980
+    second: congrats asset_3
+  - first:
+      213: 5634538985648987774
+    second: congrats asset_4
+  - first:
+      213: -4367584735819837555
+    second: congrats asset_5
+  - first:
+      213: -3192255458741416218
+    second: congrats asset_6
+  - first:
+      213: -3998300866050942998
+    second: congrats asset_7
+  - first:
+      213: -2295997388306634499
+    second: congrats asset_8
+  - first:
+      213: -6220744291333868310
+    second: congrats asset_9
+  - first:
+      213: 5723722984081630712
+    second: congrats asset_10
+  - first:
+      213: -4499529393219124488
+    second: congrats asset_11
+  - first:
+      213: -4738379781836182566
+    second: congrats asset_12
+  - first:
+      213: 363685810122264426
+    second: congrats asset_13
+  - first:
+      213: 6877497588579591489
+    second: congrats asset_14
+  - first:
+      213: 9004671037091588217
+    second: congrats asset_15
+  - first:
+      213: 605973843379643075
+    second: congrats asset_16
+  - first:
+      213: -4051369491203692641
+    second: congrats asset_17
+  - first:
+      213: 7358977854618475716
+    second: congrats asset_18
+  - first:
+      213: -5755606239078648240
+    second: congrats asset_19
+  - first:
+      213: 3055792140567444022
+    second: congrats asset_20
+  - first:
+      213: 1680331196321867872
+    second: congrats asset_21
+  - first:
+      213: -6204289130949914173
+    second: congrats asset_22
+  - first:
+      213: -3763444167997891959
+    second: congrats asset_23
+  - first:
+      213: 2608743852137170639
+    second: congrats asset_24
+  - first:
+      213: -6221104122210440262
+    second: congrats asset_25
+  - first:
+      213: 3723581056593536262
+    second: congrats asset_26
+  - first:
+      213: 5163452575837426488
+    second: congrats asset_27
+  - first:
+      213: 1430852328535867036
+    second: congrats asset_28
+  - first:
+      213: 2041500075391167478
+    second: congrats asset_29
+  - first:
+      213: -5931833043577833224
+    second: congrats asset_30
+  - first:
+      213: 9200387497519380562
+    second: congrats asset_31
+  - first:
+      213: 6923815991082400869
+    second: congrats asset_32
+  - first:
+      213: -8143070450982219375
+    second: congrats asset_33
+  - first:
+      213: 5606622257776243270
+    second: congrats asset_34
+  - first:
+      213: 2636927592821113404
+    second: congrats asset_35
+  - first:
+      213: -2813073218585303900
+    second: congrats asset_36
+  - first:
+      213: 8241940104503836082
+    second: congrats asset_37
+  - first:
+      213: 8159967202878851235
+    second: congrats asset_38
+  - first:
+      213: 3488007774856021815
+    second: congrats asset_39
+  - first:
+      213: 3300758969471520730
+    second: congrats asset_40
+  - first:
+      213: 7103752495899040740
+    second: congrats asset_41
+  - first:
+      213: -8929105885318673907
+    second: congrats asset_42
+  - first:
+      213: 4413937746337259613
+    second: congrats asset_43
+  - first:
+      213: -5643032380339182662
+    second: congrats asset_44
+  - first:
+      213: -8741883785712759685
+    second: congrats asset_45
+  - first:
+      213: -6560128844781095231
+    second: congrats asset_46
+  - first:
+      213: 1875908024474695276
+    second: congrats asset_47
+  - first:
+      213: 7102524560069476191
+    second: congrats asset_48
+  - first:
+      213: 218982110917345463
+    second: congrats asset_49
+  - first:
+      213: -4370752195137213651
+    second: congrats asset_50
+  - first:
+      213: -1048296706996988748
+    second: congrats asset_51
+  - first:
+      213: 7126750945766448768
+    second: congrats asset_52
+  - first:
+      213: -6725247400131631411
+    second: congrats asset_53
+  - first:
+      213: 4348119143794488421
+    second: congrats asset_54
+  - first:
+      213: 3251208517345290332
+    second: congrats asset_55
+  - first:
+      213: 8991458808774063546
+    second: congrats asset_56
+  - first:
+      213: -4859139766619706985
+    second: congrats asset_57
+  - first:
+      213: -2153663415120759742
+    second: congrats asset_58
+  - first:
+      213: 663004483348235439
+    second: congrats asset_59
+  - first:
+      213: -4623365489368550976
+    second: congrats asset_60
+  - first:
+      213: -6759428477439909329
+    second: congrats asset_61
+  - first:
+      213: -2315664649773316856
+    second: congrats asset_62
+  - first:
+      213: -1337209100065954393
+    second: congrats asset_63
+  - first:
+      213: -5682160486077208022
+    second: congrats asset_64
+  - first:
+      213: 244164233645155966
+    second: congrats asset_65
+  - first:
+      213: 4549365697135751740
+    second: congrats asset_66
+  - first:
+      213: -4541113956962050453
+    second: congrats asset_67
+  - first:
+      213: 3665842485152150541
+    second: congrats asset_68
+  - first:
+      213: 1548469735463422000
+    second: congrats asset_69
+  - first:
+      213: -5289605665896539279
+    second: congrats asset_70
+  - first:
+      213: 5375636246772538463
+    second: congrats asset_71
+  - first:
+      213: -1225845585681279544
+    second: congrats asset_72
+  - first:
+      213: 4776386941071004708
+    second: congrats asset_73
+  - first:
+      213: -2931965550329652376
+    second: congrats asset_74
+  - first:
+      213: 4776797173460773275
+    second: congrats asset_75
+  - first:
+      213: 6786705799337531458
+    second: congrats asset_76
+  - first:
+      213: 2386922002704416009
+    second: congrats asset_77
+  - first:
+      213: -2907375418016380732
+    second: congrats asset_78
+  - first:
+      213: 188191911643397449
+    second: congrats asset_79
+  - first:
+      213: -8946584720689118612
+    second: congrats asset_80
+  - first:
+      213: -333602973485711370
+    second: congrats asset_81
+  - first:
+      213: -4209309681143805914
+    second: congrats asset_82
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: congrats asset_0
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 868
+        width: 86
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3100a8290aba5190800000000000000
+      internalID: -7972855641806995139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_1
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 935
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190f2e10bb3e100c0800000000000000
+      internalID: -4611154151120637807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_2
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 823
+        width: 11
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22273c54c98eb4cd0800000000000000
+      internalID: -2572707004229127646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 836
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44063b3ed6fac9e60800000000000000
+      internalID: 7970438327045414980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 828
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e92b8ba57e13e40800000000000000
+      internalID: 5634538985648987774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 835
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f4a0fb2d83363c0800000000000000
+      internalID: -4367584735819837555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_6
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 815
+        width: 14
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee8a65d294d2b3d0800000000000000
+      internalID: -3192255458741416218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_7
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 788
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae795e5db8e2388c0800000000000000
+      internalID: -3998300866050942998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 599
+        width: 347
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df822c04a8af220e0800000000000000
+      internalID: -2295997388306634499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_9
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 823
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae47184a60a7ba9a0800000000000000
+      internalID: -6220744291333868310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_10
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 829
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5acea7abfbe6f40800000000000000
+      internalID: 5723722984081630712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_11
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 587
+        width: 1008
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2cebc3bd57e81c0800000000000000
+      internalID: -4499529393219124488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_12
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 808
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbe2c481b4ed3eb0800000000000000
+      internalID: -4738379781836182566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_13
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 791
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f003241521c0500800000000000000
+      internalID: 363685810122264426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_14
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 798
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14564e64e97c17f50800000000000000
+      internalID: 6877497588579591489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 790
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978a715799407fc70800000000000000
+      internalID: 9004671037091588217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_16
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 785
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c262ddfff9d86800800000000000000
+      internalID: 605973843379643075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_17
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 784
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97e2fea9e4a6c7c0800000000000000
+      internalID: -4051369491203692641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_18
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 779
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc10868e57502660800000000000000
+      internalID: 7358977854618475716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_19
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 782
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056f1bcbe9aff10b0800000000000000
+      internalID: -5755606239078648240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_20
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 779
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63af3f5f2ca586a20800000000000000
+      internalID: 3055792140567444022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_21
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 777
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068a5cdf15cb15710800000000000000
+      internalID: 1680331196321867872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_22
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 761
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1d9e938efe5e9a0800000000000000
+      internalID: -6204289130949914173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_23
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 644
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a5872087f85cbc0800000000000000
+      internalID: -3763444167997891959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_24
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 644
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6ce9836be143420800000000000000
+      internalID: 2608743852137170639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_25
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 621
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbadecf2c23aa9a0800000000000000
+      internalID: -6221104122210440262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_26
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 629
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605a1aa1e31dca330800000000000000
+      internalID: 3723581056593536262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_27
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 619
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8339d55b2c448a740800000000000000
+      internalID: 5163452575837426488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_28
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 608
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ebb60ac986bd310800000000000000
+      internalID: 1430852328535867036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_29
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 601
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbaf92908dd45c10800000000000000
+      internalID: 2041500075391167478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_30
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 599
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f87e9a6645edada0800000000000000
+      internalID: -5931833043577833224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_31
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 600
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2587699eea75eaf70800000000000000
+      internalID: 9200387497519380562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_32
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 608
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cb2aeb5f5561060800000000000000
+      internalID: 6923815991082400869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_33
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 599
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191993491900efe80800000000000000
+      internalID: -8143070450982219375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_34
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 599
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6423d800d39becd40800000000000000
+      internalID: 5606622257776243270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_35
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 596
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c324784bcaf389420800000000000000
+      internalID: 2636927592821113404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_36
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 600
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4ee0fdfc4f5f8d0800000000000000
+      internalID: -2813073218585303900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_37
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 597
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd3ffc7bd0416270800000000000000
+      internalID: 8241940104503836082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 205
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a88e6a00f60e3170800000000000000
+      internalID: 8159967202878851235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_39
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 388
+        width: 314
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737081a4794e76030800000000000000
+      internalID: 3488007774856021815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_40
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 590
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfc8886bc6aecd20800000000000000
+      internalID: 3300758969471520730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_41
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 415
+        width: 217
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb5b5af149959260800000000000000
+      internalID: 7103752495899040740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_42
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 303
+        width: 376
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a0bb77181751480800000000000000
+      internalID: -8929105885318673907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_43
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 589
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50ee178ef4714d30800000000000000
+      internalID: 4413937746337259613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_44
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 575
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab32bd9b2fbefa1b0800000000000000
+      internalID: -5643032380339182662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_45
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 566
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c08dc63079ea680800000000000000
+      internalID: -8741883785712759685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_46
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 419
+        width: 480
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6770e929db5f4a0800000000000000
+      internalID: -6560128844781095231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_47
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 454
+        width: 173
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c667e16c860980a10800000000000000
+      internalID: 1875908024474695276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_48
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 553
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fbd63e47c319260800000000000000
+      internalID: 7102524560069476191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_49
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 534
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0c465d11bf90300800000000000000
+      internalID: 218982110917345463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_50
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 506
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b66972908f753c0800000000000000
+      internalID: -4370752195137213651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_51
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 505
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b49b38f2b3b371f0800000000000000
+      internalID: -1048296706996988748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_52
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 474
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e961dd93e47e260800000000000000
+      internalID: 7126750945766448768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_53
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 469
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6e8881f1f1ba2a0800000000000000
+      internalID: -6725247400131631411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_54
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 448
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56432fee25f975c30800000000000000
+      internalID: 4348119143794488421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_55
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 443
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58271fbbec9e1d20800000000000000
+      internalID: 3251208517345290332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_56
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 448
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5f885d52418cc70800000000000000
+      internalID: 8991458808774063546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_57
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 403
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79968a8802ed09cb0800000000000000
+      internalID: -4859139766619706985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_58
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 384
+        width: 87
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244f8f7d886ac12e0800000000000000
+      internalID: -2153663415120759742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_59
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 361
+        width: 57
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4867a9017733900800000000000000
+      internalID: 663004483348235439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_60
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 427
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c13363459186dfb0800000000000000
+      internalID: -4623365489368550976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_61
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 405
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22e88ddc9fa132a0800000000000000
+      internalID: -6759428477439909329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_62
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 420
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805055b154b1ddfd0800000000000000
+      internalID: -2315664649773316856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_63
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 375
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a526288867417de0800000000000000
+      internalID: -1337209100065954393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_64
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 388
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a6b9ea429e421b0800000000000000
+      internalID: -5682160486077208022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_65
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 328
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76664da312736300800000000000000
+      internalID: 244164233645155966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_66
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 402
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32bf1b7ff7922f30800000000000000
+      internalID: 4549365697135751740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_67
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 390
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e55be7ae8baf0c0800000000000000
+      internalID: -4541113956962050453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_68
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 328
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04770a5150bfd230800000000000000
+      internalID: 3665842485152150541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_69
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 400
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0388dbf25054d7510800000000000000
+      internalID: 1548469735463422000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_70
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 341
+        width: 14
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bd7522cab8796b0800000000000000
+      internalID: -5289605665896539279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_71
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 342
+        width: 19
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c57926fa81a9a40800000000000000
+      internalID: 5375636246772538463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_72
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 399
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c59cf34febecfee0800000000000000
+      internalID: -1225845585681279544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_73
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 331
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4241a54dd92294240800000000000000
+      internalID: 4776386941071004708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_74
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 326
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b1beebdd09f47d0800000000000000
+      internalID: -2931965550329652376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_75
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 216
+        width: 100
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99283088b79a4240800000000000000
+      internalID: 4776797173460773275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_76
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 324
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248d89c87f83f2e50800000000000000
+      internalID: 6786705799337531458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_77
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 310
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90db2cd3aec002120800000000000000
+      internalID: 2386922002704416009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_78
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 290
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c84e64167de6a7d0800000000000000
+      internalID: -2907375418016380732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_79
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 300
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d3b1beb879c9200800000000000000
+      internalID: 188191911643397449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_80
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 283
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62436af89857d380800000000000000
+      internalID: -8946584720689118612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_81
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 288
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffbe55fcddce5bf0800000000000000
+      internalID: -333602973485711370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: congrats asset_82
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 140
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6288fc995278595c0800000000000000
+      internalID: -4209309681143805914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      congrats asset_0: -7972855641806995139
+      congrats asset_1: -4611154151120637807
+      congrats asset_10: 5723722984081630712
+      congrats asset_11: -4499529393219124488
+      congrats asset_12: -4738379781836182566
+      congrats asset_13: 363685810122264426
+      congrats asset_14: 6877497588579591489
+      congrats asset_15: 9004671037091588217
+      congrats asset_16: 605973843379643075
+      congrats asset_17: -4051369491203692641
+      congrats asset_18: 7358977854618475716
+      congrats asset_19: -5755606239078648240
+      congrats asset_2: -2572707004229127646
+      congrats asset_20: 3055792140567444022
+      congrats asset_21: 1680331196321867872
+      congrats asset_22: -6204289130949914173
+      congrats asset_23: -3763444167997891959
+      congrats asset_24: 2608743852137170639
+      congrats asset_25: -6221104122210440262
+      congrats asset_26: 3723581056593536262
+      congrats asset_27: 5163452575837426488
+      congrats asset_28: 1430852328535867036
+      congrats asset_29: 2041500075391167478
+      congrats asset_3: 7970438327045414980
+      congrats asset_30: -5931833043577833224
+      congrats asset_31: 9200387497519380562
+      congrats asset_32: 6923815991082400869
+      congrats asset_33: -8143070450982219375
+      congrats asset_34: 5606622257776243270
+      congrats asset_35: 2636927592821113404
+      congrats asset_36: -2813073218585303900
+      congrats asset_37: 8241940104503836082
+      congrats asset_38: 8159967202878851235
+      congrats asset_39: 3488007774856021815
+      congrats asset_4: 5634538985648987774
+      congrats asset_40: 3300758969471520730
+      congrats asset_41: 7103752495899040740
+      congrats asset_42: -8929105885318673907
+      congrats asset_43: 4413937746337259613
+      congrats asset_44: -5643032380339182662
+      congrats asset_45: -8741883785712759685
+      congrats asset_46: -6560128844781095231
+      congrats asset_47: 1875908024474695276
+      congrats asset_48: 7102524560069476191
+      congrats asset_49: 218982110917345463
+      congrats asset_5: -4367584735819837555
+      congrats asset_50: -4370752195137213651
+      congrats asset_51: -1048296706996988748
+      congrats asset_52: 7126750945766448768
+      congrats asset_53: -6725247400131631411
+      congrats asset_54: 4348119143794488421
+      congrats asset_55: 3251208517345290332
+      congrats asset_56: 8991458808774063546
+      congrats asset_57: -4859139766619706985
+      congrats asset_58: -2153663415120759742
+      congrats asset_59: 663004483348235439
+      congrats asset_6: -3192255458741416218
+      congrats asset_60: -4623365489368550976
+      congrats asset_61: -6759428477439909329
+      congrats asset_62: -2315664649773316856
+      congrats asset_63: -1337209100065954393
+      congrats asset_64: -5682160486077208022
+      congrats asset_65: 244164233645155966
+      congrats asset_66: 4549365697135751740
+      congrats asset_67: -4541113956962050453
+      congrats asset_68: 3665842485152150541
+      congrats asset_69: 1548469735463422000
+      congrats asset_7: -3998300866050942998
+      congrats asset_70: -5289605665896539279
+      congrats asset_71: 5375636246772538463
+      congrats asset_72: -1225845585681279544
+      congrats asset_73: 4776386941071004708
+      congrats asset_74: -2931965550329652376
+      congrats asset_75: 4776797173460773275
+      congrats asset_76: 6786705799337531458
+      congrats asset_77: 2386922002704416009
+      congrats asset_78: -2907375418016380732
+      congrats asset_79: 188191911643397449
+      congrats asset_8: -2295997388306634499
+      congrats asset_80: -8946584720689118612
+      congrats asset_81: -333602973485711370
+      congrats asset_82: -4209309681143805914
+      congrats asset_9: -6220744291333868310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
