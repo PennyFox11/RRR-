@@ -9,6 +9,18 @@
 //Date: 17 April 2026
 //Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/ScriptReference/AudioSource.html
+
+//Title: AudioSource.Pause
+//Author: Unity Documentation
+//Date: 28 April 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/AudioSource.Pause.html
+
+//Title: AudioSource.UnPause
+//Author: Unity Documentation
+//Date: 28 April 2026
+//Code version: Unity 6000.4
+//https://docs.unity3d.com/ScriptReference/AudioSource.UnPause.html 
 using UnityEngine;
 
 public class DogBark : MonoBehaviour
@@ -17,6 +29,8 @@ public class DogBark : MonoBehaviour
     Collider2D soundTrigger; //name collider component
 
     bool gameOver = false;
+
+    bool IsPlayerInTrigger = false;
 
     void Awake()
     {
@@ -48,18 +62,40 @@ public class DogBark : MonoBehaviour
         
         if (collider.CompareTag("Player")) //if collider that enters has the 'player' tag
         {
-            if (!source.isPlaying)
+            IsPlayerInTrigger = true;
+
+            if (!PauseMenu.GameIsPaused && !source.isPlaying)
             {
                 source.Play(); //play audio source
             }
         }
+
     }
 
     void OnTriggerExit2D(Collider2D collider) //if player exits, stop playing the audio
     {
         if (collider.CompareTag("Player"))
         {
+            IsPlayerInTrigger = false;
             source.Stop();
+        }
+    }
+
+    void Update()
+    {
+        if(PauseMenu.GameIsPaused)
+        {
+            if (source.isPlaying)
+            {
+                source.Pause();
+            }
+        }
+        else
+        {
+            if (!source.isPlaying && IsPlayerInTrigger)
+            {
+                source.UnPause();
+            }
         }
     }
 }

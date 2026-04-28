@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: d7249140f574ca8408e15c71fa859ef2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8088459953067080510
+    second: RRR title asset_0
+  - first:
+      213: 2424424233962068528
+    second: RRR title asset_1
+  - first:
+      213: 8123446241485415108
+    second: RRR title asset_2
+  - first:
+      213: 8594499742238559706
+    second: RRR title asset_3
+  - first:
+      213: -8876024386905018752
+    second: RRR title asset_4
+  - first:
+      213: -6478783206809447844
+    second: RRR title asset_5
+  - first:
+      213: -5805856415155097608
+    second: RRR title asset_6
+  - first:
+      213: -4429897782251648605
+    second: RRR title asset_7
+  - first:
+      213: 6266485284288089478
+    second: RRR title asset_8
+  - first:
+      213: -4863384135386843964
+    second: RRR title asset_9
+  - first:
+      213: -9123261106869955992
+    second: RRR title asset_10
+  - first:
+      213: -6773981406902976645
+    second: RRR title asset_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RRR title asset_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 266
+        width: 395
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4c675f68400cf80800000000000000
+      internalID: -8088459953067080510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 266
+        width: 672
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a5822eef845a120800000000000000
+      internalID: 2424424233962068528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 432
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c268b711574cb070800000000000000
+      internalID: 8123446241485415108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_3
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 368
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addc05edafbc54770800000000000000
+      internalID: 8594499742238559706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_4
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 294
+        width: 114
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e62d8e8d602d480800000000000000
+      internalID: -8876024386905018752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_5
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 315
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c525b5ddffcb616a0800000000000000
+      internalID: -6478783206809447844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 40
+        width: 608
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffe1c5e9547d6fa0800000000000000
+      internalID: -5805856415155097608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_7
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 134
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a989990077d582c0800000000000000
+      internalID: -4429897782251648605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_8
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 144
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d44303a2707f650800000000000000
+      internalID: 6266485284288089478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_9
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 128
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c43ffb65e9c18cb0800000000000000
+      internalID: -4863384135386843964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_10
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 128
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86211e34c5aa36180800000000000000
+      internalID: -9123261106869955992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRR title asset_11
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 113
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f727eeccbfdf1a0800000000000000
+      internalID: -6773981406902976645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RRR title asset_0: -8088459953067080510
+      RRR title asset_1: 2424424233962068528
+      RRR title asset_10: -9123261106869955992
+      RRR title asset_11: -6773981406902976645
+      RRR title asset_2: 8123446241485415108
+      RRR title asset_3: 8594499742238559706
+      RRR title asset_4: -8876024386905018752
+      RRR title asset_5: -6478783206809447844
+      RRR title asset_6: -5805856415155097608
+      RRR title asset_7: -4429897782251648605
+      RRR title asset_8: 6266485284288089478
+      RRR title asset_9: -4863384135386843964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
