@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
+//https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
+
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
 {
@@ -15,6 +17,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public TextMeshProUGUI keyText;
 
     [SerializeField] private GameObject Winscreen;
+
 
     void Start()
     {

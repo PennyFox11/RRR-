@@ -3,12 +3,7 @@ using UnityEngine;
 
 public class Diamond : MonoBehaviour
 {
-    AudioSource source;
-
-    void Start()
-    {
-        source = GetComponent<AudioSource>();
-    }
+    [SerializeField] private AudioClip collectSound;
   
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,11 +13,11 @@ public class Diamond : MonoBehaviour
         {
             playerInventory.DiamondCollected();
 
-            source.Play();
-
-            gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
 
             Debug.Log("Diamond Collected");
+
+            gameObject.SetActive(false);
 
         }
     }

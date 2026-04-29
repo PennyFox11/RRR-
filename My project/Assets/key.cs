@@ -3,6 +3,7 @@ using System;
 
 public class key : MonoBehaviour
 {
+    [SerializeField] private AudioClip collectSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,9 +13,11 @@ public class key : MonoBehaviour
         {
             playerInventory.KeyCollected();
 
-            gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
 
             Debug.Log("Key Collected");
+
+            gameObject.SetActive(false);
         }
     }
 
