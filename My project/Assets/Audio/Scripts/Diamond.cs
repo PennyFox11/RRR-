@@ -1,7 +1,14 @@
 using UnityEngine;
+//https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
 
 public class Diamond : MonoBehaviour
 {
+    AudioSource source;
+
+    void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
   
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -11,9 +18,12 @@ public class Diamond : MonoBehaviour
         {
             playerInventory.DiamondCollected();
 
+            source.Play();
+
             gameObject.SetActive(false);
 
             Debug.Log("Diamond Collected");
+
         }
     }
    
