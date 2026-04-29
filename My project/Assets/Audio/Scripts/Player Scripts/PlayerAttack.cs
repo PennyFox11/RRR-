@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
 {
     AudioSource source; //get the audio source component
     
-    private GameObject attackArea = default; //area in which attack happens
+    [SerializeField] private GameObject attackArea; //area in which attack happens
 
     private bool attacking = false;
 
@@ -34,7 +34,6 @@ public class PlayerAttack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attackArea = transform.GetChild(0).gameObject; // refers to the first child of teh game object
         source = GetComponent<AudioSource>(); //refers to/gets the audio source
     }
 
@@ -66,7 +65,7 @@ public class PlayerAttack : MonoBehaviour
 
         BoxCollider2D box = attackArea.GetComponent<BoxCollider2D>();
 
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll( //get a list of all colliders that fall within a boz area
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll( //get a list of all colliders that fall within a box area
             attackPoint.position,
             box.size,
             0f,

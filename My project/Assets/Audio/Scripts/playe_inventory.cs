@@ -14,6 +14,13 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public int NumberOfKeys;
     public TextMeshProUGUI keyText;
 
+    [SerializeField] private GameObject Winscreen;
+
+    void Start()
+    {
+        Winscreen.SetActive(false);
+    }
+
     void Update()
     {
         diamondText.text = NumberOfDiamonds.ToString() + " /3";
@@ -33,10 +40,10 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public void KeyCollected()
     {
         NumberOfKeys++;
-        if (maxKey >= 1)
+        if (NumberOfKeys >= maxKey)
         {
             Debug.Log("Congratulations you have passed");
-            OnKeyCollected?.Invoke();
+            Winscreen.SetActive(true);
         }
     }
 
