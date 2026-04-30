@@ -13990,13 +13990,14 @@ GameObject:
   - component: {fileID: 521652736}
   - component: {fileID: 521652734}
   - component: {fileID: 521652739}
+  - component: {fileID: 521652740}
   m_Layer: 5
   m_Name: PatioTable
   m_TagString: PatioTable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &521652734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14122,11 +14123,11 @@ RectTransform:
   m_LocalScale: {x: 1.7847329, y: 1.9185965, z: 0.59491104}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 664924117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.876828, y: -0.6130512}
+  m_AnchoredPosition: {x: 10.12, y: -9.38}
   m_SizeDelta: {x: 2.0686, y: 1.5377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521652739
@@ -14136,7 +14137,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521652733}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe7c9a42041d60d499e5a3ed2112181b, type: 3}
   m_Name: 
@@ -14146,6 +14147,23 @@ MonoBehaviour:
   dialogueText: {fileID: 696664420}
   nameText: {fileID: 1022017432}
   portraitImage: {fileID: 1398976764}
+--- !u!114 &521652740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521652733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cc07023a964a0499a35382a22f0faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  dialogueData: {fileID: 11400000, guid: 25e69981823d8514c9e371e357abe239, type: 2}
+  dialoguePanel: {fileID: 509056768}
+  dialogueText: {fileID: 1447235173}
+  nameText: {fileID: 122346613}
+  portraitImage: {fileID: 1144767688}
 --- !u!1 &522765797
 GameObject:
   m_ObjectHideFlags: 0
@@ -14885,13 +14903,13 @@ GameObject:
   - component: {fileID: 553886689}
   - component: {fileID: 553886691}
   - component: {fileID: 553886690}
-  m_Layer: 10
-  m_Name: E for Pressing
+  m_Layer: 5
+  m_Name: interactionIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &553886689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14944,7 +14962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: E to halla at Maria
+  m_Text: E TO INTERACT
 --- !u!222 &553886691
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17346,6 +17364,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1017087596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664924116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664924117}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &664924117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664924116}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.14865, y: 1.86296, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1317465487}
+  - {fileID: 697837063}
+  - {fileID: 521652738}
+  - {fileID: 1410107487}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675498266
 GameObject:
   m_ObjectHideFlags: 0
@@ -18166,13 +18219,14 @@ GameObject:
   - component: {fileID: 697837061}
   - component: {fileID: 697837059}
   - component: {fileID: 697837064}
+  - component: {fileID: 697837065}
   m_Layer: 5
   m_Name: Car
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &697837059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18298,11 +18352,11 @@ RectTransform:
   m_LocalScale: {x: 0.9624737, y: 1.4437104, z: 0.3208246}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 664924117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5341101, y: -2.2171965}
+  m_AnchoredPosition: {x: -13.05, y: -9.29}
   m_SizeDelta: {x: 1.8997, y: 1.8422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697837064
@@ -18322,6 +18376,23 @@ MonoBehaviour:
   dialogueText: {fileID: 130671298}
   nameText: {fileID: 1735931892}
   portraitImage: {fileID: 1215619699}
+--- !u!114 &697837065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697837058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cc07023a964a0499a35382a22f0faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  dialogueData: {fileID: 11400000, guid: 1bdff88dca2735c40ac9dded30e65f9f, type: 2}
+  dialoguePanel: {fileID: 509056768}
+  dialogueText: {fileID: 1447235173}
+  nameText: {fileID: 122346613}
+  portraitImage: {fileID: 1144767688}
 --- !u!1 &697878998
 GameObject:
   m_ObjectHideFlags: 0
@@ -33722,7 +33793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.821289, y: -162.95041}
+  m_AnchoredPosition: {x: -4.821289, y: -162.95044}
   m_SizeDelta: {x: 1683.3339, y: 1033.942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236757232
@@ -35767,11 +35838,11 @@ RectTransform:
   m_LocalScale: {x: 0.9624737, y: 1.4437104, z: 0.3208246}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 664924117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.017066956, y: -5.475147}
+  m_AnchoredPosition: {x: 2.131583, y: -7.3381066}
   m_SizeDelta: {x: 1.8997, y: 1.8422}
   m_Pivot: {x: 0.5, y: 0.19648689}
 --- !u!212 &1317465488
@@ -37990,13 +38061,13 @@ GameObject:
   - component: {fileID: 1410107483}
   - component: {fileID: 1410107488}
   - component: {fileID: 1410107489}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Bathtub
   m_TagString: Bathtub
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1410107483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38096,9 +38167,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -922867533
-  m_SortingLayer: 9
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.6509433, g: 0.88364786, b: 1, a: 1}
@@ -38122,12 +38193,12 @@ RectTransform:
   m_LocalScale: {x: 2.2336183, y: 1.2239002, z: 1.2239002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 664924117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28876.695, y: 4330.3066}
-  m_SizeDelta: {x: 2.3652, y: 2.0301}
+  m_AnchoredPosition: {x: -4.9945, y: 7.0227}
+  m_SizeDelta: {x: 2.4149, y: 2.4669}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410107488
 MonoBehaviour:
@@ -38136,7 +38207,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410107482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d68c4133453093742b6567912ce149f9, type: 3}
   m_Name: 
@@ -38155,11 +38226,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1410107482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a3eb2cc643812459997d33cfe8a35b, type: 3}
+  m_Script: {fileID: 11500000, guid: f4cc07023a964a0499a35382a22f0faf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractionTrial2
-  interactionIcon: {fileID: 0}
-  npc2: {fileID: 1410107488}
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  dialogueData: {fileID: 11400000, guid: f005ed79f62319a4d987cfb9b52d7f6b, type: 2}
+  dialoguePanel: {fileID: 509056768}
+  dialogueText: {fileID: 1447235173}
+  nameText: {fileID: 122346613}
+  portraitImage: {fileID: 1144767688}
 --- !u!1 &1416133818
 GameObject:
   m_ObjectHideFlags: 0
@@ -58352,7 +58426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionTrial
   interactionIcon: {fileID: 553886688}
-  npc: {fileID: 1317465491}
+  currentNPC: {fileID: 0}
 --- !u!212 &7770348216146296030
 SpriteRenderer:
   serializedVersion: 2
@@ -58772,8 +58846,5 @@ SceneRoots:
   - {fileID: 14962984}
   - {fileID: 2130917405}
   - {fileID: 1900757538}
-  - {fileID: 1410107487}
-  - {fileID: 521652738}
-  - {fileID: 697837063}
-  - {fileID: 1317465487}
+  - {fileID: 664924117}
   - {fileID: 988607497}
