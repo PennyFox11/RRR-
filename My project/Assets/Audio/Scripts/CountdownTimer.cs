@@ -19,6 +19,8 @@
 //Date: 17 March 2022
 //Code version: Unity 2020.3.22f1
 //Availability: https://www.youtube.com/watch?v=ZfRbuOCAeE8 
+
+// https://docs.unity3d.com/Packages/com.unity.ugui@2.6/manual/script-Image.html 
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,12 +31,15 @@ public class CountdownTimer : MonoBehaviour
     public float countdownTime = 5f; //countdown is five seconds
     public float originalTime;
     public TextMeshProUGUI timerText;
+
+    public Image timerImage;
     private bool isTimerRunning = false;
 
     void Start()
     {
         originalTime = countdownTime; //timer is at 5 seconds
         timerText.gameObject.SetActive(false); //no text is present
+        timerImage.gameObject.SetActive(false); //no box is present
     }
 
     // Update is called once per frame
@@ -60,6 +65,7 @@ public class CountdownTimer : MonoBehaviour
             countdownTime = originalTime; //timer starts at 5
             isTimerRunning = true; //timer starts
             timerText.gameObject.SetActive(true); //text appears
+            timerImage.gameObject.SetActive(true); //box appears
         }
     }
 
@@ -70,6 +76,7 @@ public class CountdownTimer : MonoBehaviour
             isTimerRunning = false; //timer stops
             countdownTime = originalTime; //timer resets
             timerText.gameObject.SetActive(false); //text vanishes
+            timerImage.gameObject.SetActive(false); //box disappears
         }
     }
 
