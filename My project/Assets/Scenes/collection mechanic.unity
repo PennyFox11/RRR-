@@ -1422,6 +1422,7 @@ MonoBehaviour:
   door: {fileID: 1361613980}
   maxHealth: 50
   currentHealth: 0
+  healthBarBlink: {fileID: 1406801831}
   healthBar2: {fileID: 1351869800}
 --- !u!4 &50898131 stripped
 Transform:
@@ -40860,6 +40861,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402571349}
   m_CullTransparentMesh: 1
+--- !u!1 &1406801827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6883010810278512777, guid: 078b3b7fd73a6574f8c17329bb28f1b9, type: 3}
+  m_PrefabInstance: {fileID: 1009176523869918341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1406801831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406801827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8df475a89a8e9a41afb6e5d3ac9fa87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIBlink
+  blinkDecaySpeed: 10
 --- !u!1 &1410107482
 GameObject:
   m_ObjectHideFlags: 0
@@ -59499,10 +59518,17 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 58f65f469cc4d7a4a8640215c52060ba, type: 3}
+    - target: {fileID: 8985363013263758733, guid: 078b3b7fd73a6574f8c17329bb28f1b9, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 43e6ae13c9f77d34abc67a90a238192c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6883010810278512777, guid: 078b3b7fd73a6574f8c17329bb28f1b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406801831}
   m_SourcePrefab: {fileID: 100100000, guid: 078b3b7fd73a6574f8c17329bb28f1b9, type: 3}
 --- !u!61 &1019354971973179779
 BoxCollider2D:

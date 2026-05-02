@@ -20,6 +20,8 @@ public class GuardHealth : MonoBehaviour
     [SerializeField] public int maxHealth = 50; //adjust this in the inspector; public and can be accessed from other scripts
     [SerializeField] int currentHealth; // adjust in inspector
 
+    [SerializeField] private UIBlink healthBarBlink;
+
     public HealthBar2 healthBar2; // public variable; UI of guard health 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() //runs once at the beginning; enemy starts with full health (shown in health bar)
@@ -34,6 +36,11 @@ public class GuardHealth : MonoBehaviour
         Debug.Log(currentHealth + "/" + maxHealth); //show change on console
 
         healthBar2.SetHealth(currentHealth); //show change in UI
+
+        if (amount < 0)
+        {
+            healthBarBlink.Blink();
+        }
 
         if (currentHealth <= 0)
         {
