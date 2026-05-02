@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
     public static event Action OnPlayerDeath; //declare game over event
     [SerializeField] public int maxHealth = 70; //adjust in inspector and access from other scripts; the player's maximum health
    [SerializeField] public int currentHealth; //adjust in inspector and access from other scripts
+   [SerializeField] private UIFlash healthBarFlash;
 
    public HealthBar healthBar; //declare the health bar; make it public
 
@@ -54,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (amount < 0) //the "amount" parameter has a value below zero. The value will be below zero if a health decrease has been made through the ChangeHealth function
         {
+            healthBarFlash.Blink();
             if (isInvincible) //exit the ChangeHealth function if the player is already invincible. 
             {
                 return;

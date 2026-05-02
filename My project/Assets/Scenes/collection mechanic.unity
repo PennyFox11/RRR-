@@ -39393,6 +39393,7 @@ GameObject:
   - component: {fileID: 1344127005}
   - component: {fileID: 1344127007}
   - component: {fileID: 1344127006}
+  - component: {fileID: 1344127008}
   m_Layer: 5
   m_Name: Border
   m_TagString: Untagged
@@ -39431,7 +39432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: a9ab599fcba2015439e1000c9e98f630, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39457,6 +39458,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344127004}
   m_CullTransparentMesh: 1
+--- !u!114 &1344127008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344127004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2360b958c97c52f4590c3874d02619d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIFlash
+  flashDecaySpeed: 20
 --- !u!114 &1351869800 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8806408328783508045, guid: 078b3b7fd73a6574f8c17329bb28f1b9, type: 3}
@@ -61893,6 +61907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 70
   currentHealth: 0
+  healthBarFlash: {fileID: 1344127008}
   healthBar: {fileID: 943488409}
   timeInvincible: 2
 --- !u!82 &7757818255490258116
