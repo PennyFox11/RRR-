@@ -29,11 +29,11 @@ public class AlarmTrigger : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D (Collider2D other)
+    public void HideSprite()
     {
-        if(other.CompareTag("Player"))
-        {
-            spriteRenderer.enabled = false;
-        }
+        spriteRenderer.enabled = false;
+        hasPlayed = false;
     }
+
+
 }

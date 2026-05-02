@@ -34,6 +34,7 @@ public class CountdownTimer : MonoBehaviour
 
     public Image timerImage;
     private bool isTimerRunning = false;
+    [SerializeField] private AudioClip catchSound;
 
     void Start()
     {
@@ -87,6 +88,7 @@ public class CountdownTimer : MonoBehaviour
 
     void OnTimerEnd()
     {
+        AudioSource.PlayClipAtPoint(catchSound, transform.position);
         Debug.Log("Time is up!");
         timerText.gameObject.SetActive(false); //text disappears
 

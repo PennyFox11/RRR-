@@ -32,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int maxHealth = 70; //adjust in inspector and access from other scripts; the player's maximum health
    [SerializeField] public int currentHealth; //adjust in inspector and access from other scripts
    [SerializeField] private UIFlash healthBarFlash;
+   [SerializeField] private AudioClip deathSound;
 
    public HealthBar healthBar; //declare the health bar; make it public
 
@@ -70,6 +71,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0) //if player health reaches zero
         {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             currentHealth = 0;
             Debug.Log("You're dead!");
             OnPlayerDeath?.Invoke(); //if OnPlayer Death is not null, invoke the player death function
