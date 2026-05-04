@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 0c7f6e7f4faca834eb1486068b2e5e72
+guid: d83b62188438821458a632202af3f85f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8994699796013446755
-    second: maria quick sweep cycle_0
+      213: 3653089394531946426
+    second: maria body design1_0
   - first:
-      213: 6568760229193268018
-    second: maria quick sweep cycle_1
-  - first:
-      213: -2768732046856024783
-    second: maria quick sweep cycle_2
-  - first:
-      213: 1863763394907300889
-    second: maria quick sweep cycle_3
-  - first:
-      213: 1160010261378648388
-    second: maria quick sweep cycle_4
+      213: 8687707654414197751
+    second: maria body design1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,45 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: maria quick sweep cycle_0
+      name: maria body design1_0
       rect:
         serializedVersion: 2
-        x: 40
+        x: 39
         y: 14
-        width: 319
-        height: 727
+        width: 321
+        height: 729
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d99075501386c2380800000000000000
-      internalID: -8994699796013446755
+      spriteID: abfc2dd037162b230800000000000000
+      internalID: 3653089394531946426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maria quick sweep cycle_2
+      name: maria body design1_1
       rect:
         serializedVersion: 2
-        x: 494
-        y: 16
-        width: 319
-        height: 727
+        x: 52
+        y: 586
+        width: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13d08ec6fdc7399d0800000000000000
-      internalID: -2768732046856024783
+      spriteID: 7f3eccd0510f09870800000000000000
+      internalID: 8687707654414197751
       vertices: []
       indices: 
       edges: []
@@ -159,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b381c325cbf02bd43a07a5f9d6eeaa97
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -167,15 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      maria quick sweep cycle_0: -8994699796013446755
-      maria quick sweep cycle_1: 6568760229193268018
-      maria quick sweep cycle_2: -2768732046856024783
-      maria quick sweep cycle_3: 1863763394907300889
-      maria quick sweep cycle_4: 1160010261378648388
+      maria body design1_0: 3653089394531946426
+      maria body design1_1: 8687707654414197751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
