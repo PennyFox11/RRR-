@@ -4,7 +4,7 @@ public class AlarmTrigger : MonoBehaviour
 {
     public Animator alarmAnimator;
     private SpriteRenderer spriteRenderer;
-    AudioSource source;
+    public AudioSource source;
 
     private bool hasPlayed = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
