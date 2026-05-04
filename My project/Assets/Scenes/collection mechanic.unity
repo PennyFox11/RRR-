@@ -16779,9 +16779,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81.77002, y: -80.97}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 163.54004, y: 161.94}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &564054676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28070,7 +28070,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ae08e031d8a6df9478fefc2962c18cab, type: 3}
+  m_Resource: {fileID: 8300000, guid: c0c4614955655a94ba681d2ef47edcbf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -58352,6 +58352,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4069503668063080617, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
+      propertyPath: m_Size.y
+      value: 7.199715
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069503668063080617, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.421005
+      objectReference: {fileID: 0}
     - target: {fileID: 4382135045654545667, guid: c98409e2769d6954f9510c9eaccd1a99, type: 3}
       propertyPath: m_Name
       value: First aid kit
@@ -62235,6 +62243,9 @@ MonoBehaviour:
   MoveSpeed: 5
   Rigidbody: {fileID: 7363002138309822997}
   movementAudio: {fileID: 7757818255490258119}
+  actionAudio: {fileID: 7757818255490258116}
+  movementClip: {fileID: 8300000, guid: 13d056d4568a9d64d94db25c945820f9, type: 3}
+  actionClip: {fileID: 8300000, guid: 8d36ce839b141ed46a18ec990f07bdb8, type: 3}
 --- !u!114 &7757818255490258112
 MonoBehaviour:
   m_ObjectHideFlags: 0

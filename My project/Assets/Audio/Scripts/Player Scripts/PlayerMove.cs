@@ -19,6 +19,10 @@ public class PlayerMove : MonoBehaviour
     public Rigidbody2D Rigidbody; //create rigidbody variable
 
     public AudioSource movementAudio;
+    public AudioSource actionAudio;
+
+    public AudioClip movementClip;
+    public AudioClip actionClip;
 
     private void OnEnable() //links to Game Over screen
     {
@@ -35,7 +39,8 @@ public class PlayerMove : MonoBehaviour
     {
         EnablePlayerMovement();
         Rigidbody = GetComponent<Rigidbody2D>(); //enable rigidbody component
-        movementAudio = GetComponent<AudioSource>();
+        movementAudio.clip = movementClip;
+        actionAudio.clip = actionClip;
     }
 
     // Update is called once per frame
