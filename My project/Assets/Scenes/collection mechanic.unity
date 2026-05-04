@@ -14742,7 +14742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.437012, y: -350.93002}
+  m_AnchoredPosition: {x: 17.437012, y: -350.93005}
   m_SizeDelta: {x: -34.88, y: -701.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509056770
@@ -38499,6 +38499,7 @@ GameObject:
   - component: {fileID: 1317465490}
   - component: {fileID: 1317465491}
   - component: {fileID: 1317465492}
+  - component: {fileID: 1317465493}
   m_Layer: 9
   m_Name: Maria(NPC)
   m_TagString: Maria
@@ -38515,15 +38516,15 @@ RectTransform:
   m_GameObject: {fileID: 1317465486}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.9624737, y: 1.4437104, z: 0.3208246}
+  m_LocalScale: {x: 0.21959572, y: 0.32939357, z: 0.07319858}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664924117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.131583, y: -7.3381066}
-  m_SizeDelta: {x: 1.8997, y: 1.8422}
+  m_AnchoredPosition: {x: 2.7568, y: -7.9059}
+  m_SizeDelta: {x: 2.0524, y: 1.9779}
   m_Pivot: {x: 0.5, y: 0.19648689}
 --- !u!212 &1317465488
 SpriteRenderer:
@@ -38574,8 +38575,8 @@ SpriteRenderer:
   m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.30028477, g: 0.3645798, b: 0.3962264, a: 1}
+  m_Sprite: {fileID: -8994699796013446755, guid: 0c7f6e7f4faca834eb1486068b2e5e72, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38643,18 +38644,40 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.053296745, y: -0.026649475}
+  m_Offset: {x: -1.5292325, y: -0.09450817}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.21, y: 7.29}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.7588468, y: 2.0482013}
+  m_Size: {x: 9.069733, y: 7.5447807}
   m_EdgeRadius: 0
+--- !u!95 &1317465493
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317465486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e42df4c17b7d1c147ad1fa7a4762f57c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1323383452
 GameObject:
   m_ObjectHideFlags: 0
