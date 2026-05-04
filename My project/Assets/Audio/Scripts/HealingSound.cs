@@ -23,4 +23,12 @@ public class HealingSound : MonoBehaviour
             source.Play(); //play audio
         }
     }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            source.Stop();
+        }
+    }
 }
