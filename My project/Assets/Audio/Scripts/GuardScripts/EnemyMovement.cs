@@ -18,7 +18,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-
+    private AudioSource source;
     private Vector3 startPosition; //setting a position as a "Vector"
     
     [SerializeField]
@@ -42,6 +42,7 @@ public class EnemyMovement : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
+        source = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate() //update at regular, fixed intervals
@@ -90,11 +91,21 @@ public class EnemyMovement : MonoBehaviour
         if (_targetDirection == Vector2.zero)
         {
             _rigidbody.linearVelocity = Vector2.zero;
+
+            if (source.isPlaying)
+            {
+                source.Stop();
+            }
         }
         else
         {
             float currentSpeed = _playerAwarenessController.AwareOfPlayer ? _speed : _returnSpeed;
             _rigidbody.linearVelocity = transform.up * _speed;
+            
+            if(!source.isPlaying)
+            {
+                source.Play();
+            }
         }
     }
 }
