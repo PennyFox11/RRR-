@@ -46,7 +46,7 @@ public class InteractionTrial : MonoBehaviour
         {
             if ( interactionIcon != null )
             {
-                interactionIcon.SetActive(true); //once object is out of range, the icon will disappear
+                interactionIcon.SetActive(false); //once object is out of range, the icon will disappear
 
             }
             
