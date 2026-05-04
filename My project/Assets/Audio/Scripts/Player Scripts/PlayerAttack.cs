@@ -19,7 +19,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    AudioSource source; //get the audio source component
+    public AudioSource actionAudio; //get the audio source component
     
     [SerializeField] private GameObject attackArea; //area in which attack happens
 
@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        source = GetComponent<AudioSource>(); //refers to/gets the audio source
+        actionAudio = GetComponent<AudioSource>(); //refers to/gets the audio source
     }
 
     // Update is called once per frame
@@ -80,9 +80,9 @@ public class PlayerAttack : MonoBehaviour
             {
                 guardHealth.ChangeHealth(-damage); //reduce health
 
-                if(!source.isPlaying)
+                if(!actionAudio.isPlaying)
                 {
-                    source.Play(); //play attack sound
+                    actionAudio.Play(); //play attack sound
                 }
             }
         }

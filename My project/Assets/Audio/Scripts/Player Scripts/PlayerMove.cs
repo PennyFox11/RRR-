@@ -18,6 +18,8 @@ public class PlayerMove : MonoBehaviour
     public float MoveSpeed; //adjustable; speed of player
     public Rigidbody2D Rigidbody; //create rigidbody variable
 
+    public AudioSource movementAudio;
+
     private void OnEnable() //links to Game Over screen
     {
         PlayerHealth.OnPlayerDeath += DisablePlayerMovement;
@@ -33,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     {
         EnablePlayerMovement();
         Rigidbody = GetComponent<Rigidbody2D>(); //enable rigidbody component
+        movementAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +45,21 @@ public class PlayerMove : MonoBehaviour
         direction.Normalize(); //converts the vector to have a length of 1 while keeping its direction
 
         Rigidbody.linearVelocity = direction * MoveSpeed; //gives a velocity vector
+
+        if(direction.magnitude > 0)
+        {
+            if(!movementAudio.isPlaying)
+            {
+                movementAudio.Play();
+            }
+        }
+        else
+        {
+            if (movementAudio.isPlaying)
+            {
+                movementAudio.Stop();
+            }
+        }
 
     }
     private void DisablePlayerMovement() //stop player movement when the player dies
