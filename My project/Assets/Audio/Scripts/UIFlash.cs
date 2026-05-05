@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
-//https://www.youtube.com/watch?v=E3jDPyLcTNk
+//Title: Unity Tutorial: How To Make Characters Blink on Damage - URP Sprite Shader
+//Author: PitilT
+//Date: 1 January 2026
+//Code version: Unity 6000.2.8f1
+//Availability: https://www.youtube.com/watch?v=E3jDPyLcTNk
 
 public class UIFlash : MonoBehaviour
 {
