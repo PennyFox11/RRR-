@@ -4,13 +4,21 @@ using UnityEngine;
 public class PlayerRunning : MonoBehaviour
 {
     public float moveSpeed = 5f;
+
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    private Vector3 moveDirection;
     bool isRunning = false;
+
+    private Vector2 lastMoveDir = Vector2.down;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -40,7 +48,25 @@ public class PlayerRunning : MonoBehaviour
             transform.localScale = new Vector3(1, transform.localScale.y);
         }
 
+        isRunning = moveDirection != Vector3.zero;
+
+        if (isRunning )
+        {
+            lastMoveDir = moveDirection;
+        }
+
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
         animator.SetBool("Run", isRunning);
+
+        if (isRunning)
+        {
+            animator.SetFloat("MoveX" , moveDirection.x);
+            animator.SetFloat("MoveY" , moveDirection.y);
+        }
+        else
+        {
+            animator.SetFloat("MoveX" , lastMoveDir.x);
+            animator.SetFloat("MoveY", lastMoveDir.y);
+        }
     }
 }

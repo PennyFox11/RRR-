@@ -31,7 +31,7 @@ public class DangerZone : MonoBehaviour
         source.Stop();
     }
 
-    void OnTriggerStay2D(Collider2D other) //player stays in danger zone collider
+    public void OnTriggerStay2D(Collider2D other) //player stays in danger zone collider
     {
         if (playerDead) //exit teh function if the player is dead
         {

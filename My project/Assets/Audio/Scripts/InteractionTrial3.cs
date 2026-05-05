@@ -1,43 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static PlayerMove;
+
 
 public class InteractionTrial3 : MonoBehaviour
 {
-    public GameObject interactionIcon;
-    public GameObject Panel;
+    public PlayerHealth playerHealth;
+    [SerializeField] private GameObject player;
+    public EnemyMovement enemyMovement;
 
-    public NPC3 npc3;
+    [SerializeField] private float speed = 15.0f;
+    private object health;
 
+    public int distance = 10;
 
     public void Start()
-    {
-        interactionIcon.SetActive(false);
+    { 
+        PlayerHealth health = GetComponent<PlayerHealth>();
     }
 
-    public void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (collision.tag == "Player")
         {
-            Panel.SetActive(true);
-            npc3.StartDialogue();
-            Debug.Log("Interaction Happened");
+            EnemyMovement();
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other) //triggers interaction icon to show when in range with an interactable object
-    {
-        if (other.tag == "PatioTable") //checks if there is an interactable script on the object
-        {
-            interactionIcon.SetActive(true); //once object is in range, icon will show above player
-        }
-
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision) //checks if the interactble is the same one that is in range
+        if (collision.tag == "Player")
         {
-            interactionIcon.SetActive(false); //once object is out of range, the icon will disappear
+            speed = 0f;
         }
+    }
+
+    public void Update()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Debug.Log("Targeting Player");
+    }
+
+    public void EnemyMovement()
+    {
+        
     }
 }
