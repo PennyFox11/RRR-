@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
-    public Animation anim;
+    //public Animation anim;
 
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers;
@@ -64,7 +64,7 @@ public class PlayerAttack : MonoBehaviour
         attacking = true;
         attackArea.SetActive(true);
 
-        anim.Play("Attack");
+        //anim.Play("Attack");
 
         BoxCollider2D box = attackArea.GetComponent<BoxCollider2D>();
 
