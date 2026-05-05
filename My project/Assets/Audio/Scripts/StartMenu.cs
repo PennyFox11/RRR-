@@ -8,14 +8,14 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
-    public void OnPlayButton()
+    public void OnPlayButton() //
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Prototype 2");
     }
 
     public void OnTutorialButton()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Tutorial Page");
     }
 
 }
