@@ -1,5 +1,9 @@
 using UnityEngine;
-//https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
+//Title: AudioSource.PlayClipAtPoint
+//Author: Unity Documentation
+//Date: 4 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
 
 public class Diamond : MonoBehaviour
 {

@@ -3,7 +3,11 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-//https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
+//Title: GameObject.SetActive
+//Author: Unity Documentation
+//Date: 4 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
