@@ -20,7 +20,11 @@
 //Code version: Unity 2020.3.22f1
 //Availability: https://www.youtube.com/watch?v=ZfRbuOCAeE8 
 
-// https://docs.unity3d.com/Packages/com.unity.ugui@2.6/manual/script-Image.html 
+//Title: Image
+//Author: Unity Manual
+//Date: 2026
+//Code version: uGUI 2.5.0
+//Availability: https://docs.unity3d.com/Packages/com.unity.ugui@2.6/manual/script-Image.html 
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
