@@ -6681,7 +6681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &574224853
 Animator:
   serializedVersion: 7
@@ -27810,6 +27810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   attackArea: {fileID: 1465641695}
+  anim: {fileID: 0}
   attackPoint: {fileID: 1632326671}
   enemyLayers:
     serializedVersion: 2
