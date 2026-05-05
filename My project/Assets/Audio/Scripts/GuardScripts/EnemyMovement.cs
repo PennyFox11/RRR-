@@ -27,7 +27,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private float _rotationSpeed; // make the variable of rotation speed (how fast the enemy turns), made adjustable in inspector even though it's private
 
-    [SerializeField]
     private float _returnSpeed; //make variable of return speed (how fast enemy returns to its start position), can adjust in inspector
 
     private Rigidbody2D _rigidbody; // references the objects rigidbody component to apply forces to game object and control it
