@@ -9,6 +9,8 @@ TagManager:
   - Bathtub
   - PatioTable
   - Car
+  - diamond
+  - Enemy
   layers:
   - Default
   - TransparentFX
