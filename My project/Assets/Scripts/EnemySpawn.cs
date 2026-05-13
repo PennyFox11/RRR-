@@ -1,42 +1,25 @@
-//This script was created with tutor help
+//This script was partially created with tutor help
+//https://docs.unity3d.com/6000.4/Documentation/Manual/instantiating-prefabs.html
+//
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
     [Header ("Spawn Settings")]
     public GameObject guardEnemyPrefab;
-    public float spawnRate = 2f; 
     public float spawnRadius = 5f;
+    private GameObject currentEnemy;
+    private bool hasSpawned = false;
 
-    [Header ("Limit Settings")]
-    public int maxEnemies = 10; //maximum enemies allowed at once
-    public string enemyTag = "Enemy"; //ensure enemy prefab has same tag!
-
-    private float _nextSpawnTime;
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        Debug.Log("Spawner Running");
-        Debug.Log(GetCurrentEnemyCount());
-        if(Time.time >= _nextSpawnTime)
-        {
-            Debug.Log("Trying to spawn");
-            if (GetCurrentEnemyCount() < maxEnemies) //only spawn if under the limit
-            {
-                SpawnEnemy();
-            }
-
-            _nextSpawnTime = Time.time + spawnRate;
-        }
+        SpawnEnemy();
     }
 
     void SpawnEnemy()
     {
-        Debug.Log("Spawn enemy function entered");
-        if (guardEnemyPrefab == null)
+        if (hasSpawned)
         {
-            Debug.Log("ERROR - prefab not assigned");
             return;
         }
 
@@ -48,14 +31,15 @@ public class EnemySpawn : MonoBehaviour
 
         //Vector3 spawnPosition = transform.position + new Vector3(randomOffset.x, randomOffset.y, 0);
 
-        Instantiate(guardEnemyPrefab, spawnPosition, Quaternion.identity);
+        currentEnemy = Instantiate(
+            guardEnemyPrefab,
+            spawnPosition,
+            Quaternion.identity
+        );
+
+        hasSpawned = true;
 
         Debug.Log("Enemy Spawned!");
-    }
-
-    int GetCurrentEnemyCount() //finds all objects in the scene with the specific tag
-    {
-        return GameObject.FindGameObjectsWithTag(enemyTag).Length;
     }
 
     void OnDrawGizmosSelected()

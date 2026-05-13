@@ -11,6 +11,7 @@ TagManager:
   - Car
   - diamond
   - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX

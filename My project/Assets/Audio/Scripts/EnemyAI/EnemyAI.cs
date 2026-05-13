@@ -9,7 +9,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Pathfinding")] //this will show in the script editor
-    public Transform target;   //the target the enemy is targeting
+    private Transform target;   //the target the enemy is targeting
     public float activateDistance = 50f; //this will be the activation distance
     public float pathUpdateSeconds = 0.5f; //this is how often we are going to update the A* algorithm that is used to detect colliders
 
@@ -53,6 +53,11 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if(playerObject != null)
+        {
+            target = playerObject.transform;
+        }
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
     }
@@ -151,7 +156,11 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInDistance()
     {
-        return Vector2.Distance(transform.position, target.transform.position) < activateDistance; //checking if the enemy is within the activation distance 
+        if (target == null)
+        {
+            return false;
+        }
+        return Vector2.Distance(transform.position, target.position) < activateDistance; //checking if the enemy is within the activation distance 
     }
 
     private void OnPathComplete(Path p)

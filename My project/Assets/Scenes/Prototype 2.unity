@@ -564,7 +564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22352fb60f42bcf4d829b54a10909224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuardHealth
-  door: {fileID: 1361613980}
   maxHealth: 50
   currentHealth: 0
   healthBarBlink: {fileID: 260793432}
@@ -4429,10 +4428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
-  spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 10
-  enemyTag: Enemy
 --- !u!4 &382699530
 Transform:
   m_ObjectHideFlags: 0
@@ -4442,7 +4438,7 @@ Transform:
   m_GameObject: {fileID: 382699528}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.37, y: 6.41, z: 0}
+  m_LocalPosition: {x: -15.75, y: 7.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5608,7 +5604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.437012, y: -350.93002}
+  m_AnchoredPosition: {x: 17.437012, y: -350.93008}
   m_SizeDelta: {x: -34.88, y: -701.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509056770
@@ -10199,10 +10195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
-  spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 10
-  enemyTag: Enemy
 --- !u!4 &899968904
 Transform:
   m_ObjectHideFlags: 0
@@ -10212,7 +10205,7 @@ Transform:
   m_GameObject: {fileID: 899968902}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.27, y: 7.98, z: 0}
+  m_LocalPosition: {x: 14.41, y: 6.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20323,11 +20316,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357520227}
   m_CullTransparentMesh: 1
---- !u!1 &1361613980 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8343384609780252514, guid: 34c12fa86bdaef443a20553599ac6ed1, type: 3}
-  m_PrefabInstance: {fileID: 5726694702174394820}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1368752189
 GameObject:
   m_ObjectHideFlags: 0
@@ -24330,10 +24318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
-  spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 10
-  enemyTag: Enemy
 --- !u!4 &1809254378
 Transform:
   m_ObjectHideFlags: 0
@@ -24343,7 +24328,7 @@ Transform:
   m_GameObject: {fileID: 1809254376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.37, y: -8.43, z: 0}
+  m_LocalPosition: {x: -16.94, y: -6.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27551,6 +27536,10 @@ PrefabInstance:
     - target: {fileID: 8343384609780252514, guid: 34c12fa86bdaef443a20553599ac6ed1, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343384609780252514, guid: 34c12fa86bdaef443a20553599ac6ed1, type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 8581164755324717262, guid: 34c12fa86bdaef443a20553599ac6ed1, type: 3}
       propertyPath: m_SortingOrder
