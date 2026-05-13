@@ -11197,7 +11197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d7ad51bac5b1834a94859bb479c6d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  target: {fileID: 0}
+  target: {fileID: 2355142818794679520}
   activateDistance: 10
   pathUpdateSeconds: 0.5
   speed: 2.5
@@ -11283,9 +11283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32cc979486df0094ea3bad6b5c0c6279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionTrial3
-  playerHealth: {fileID: 0}
-  player: {fileID: 0}
-  enemyMovement: {fileID: 0}
+  playerHealth: {fileID: 7757818255490258115}
+  player: {fileID: 182791251773534076}
+  enemyMovement: {fileID: 960875428}
   speed: 4
   distance: 10
 --- !u!95 &960875424
@@ -11419,7 +11419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22352fb60f42bcf4d829b54a10909224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuardHealth
-  door: {fileID: 0}
+  door: {fileID: 1361613980}
   maxHealth: 50
   currentHealth: 0
   healthBarBlink: {fileID: 855783861}
