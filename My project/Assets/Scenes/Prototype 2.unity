@@ -4431,7 +4431,7 @@ MonoBehaviour:
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 1
+  maxEnemies: 10
   enemyTag: Enemy
 --- !u!4 &382699530
 Transform:
@@ -10201,7 +10201,7 @@ MonoBehaviour:
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 1
+  maxEnemies: 10
   enemyTag: Enemy
 --- !u!4 &899968904
 Transform:
@@ -24332,7 +24332,7 @@ MonoBehaviour:
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRate: 2
   spawnRadius: 1
-  maxEnemies: 1
+  maxEnemies: 10
   enemyTag: Enemy
 --- !u!4 &1809254378
 Transform:
