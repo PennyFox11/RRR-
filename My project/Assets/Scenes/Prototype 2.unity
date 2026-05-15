@@ -4463,8 +4463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRadius: 1
-  spawnInterval: 40
-  initialDelay: 40
+  spawnInterval: 35
+  initialDelay: 35
 --- !u!4 &382699530
 Transform:
   m_ObjectHideFlags: 0
@@ -5640,7 +5640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.437012, y: -350.93005}
+  m_AnchoredPosition: {x: 17.437012, y: -350.93008}
   m_SizeDelta: {x: -34.88, y: -701.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509056770
@@ -10232,8 +10232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRadius: 1
-  spawnInterval: 40
-  initialDelay: 80
+  spawnInterval: 35
+  initialDelay: 70
 --- !u!4 &899968904
 Transform:
   m_ObjectHideFlags: 0
@@ -24357,7 +24357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   guardEnemyPrefab: {fileID: 6513627311893927140, guid: 72bd11fa3198b9940baeb1814754a2a3, type: 3}
   spawnRadius: 1
-  spawnInterval: 40
+  spawnInterval: 35
   initialDelay: 0
 --- !u!4 &1809254378
 Transform:

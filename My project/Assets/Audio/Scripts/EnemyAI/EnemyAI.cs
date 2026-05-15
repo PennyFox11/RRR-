@@ -26,6 +26,8 @@ public class EnemyAI : MonoBehaviour
     [Header("Combat")]
     public float attackDistance = 0.5f; // The distance at which the enemy will initiate an attack
 
+     private AudioSource footstepAudio;
+
     //[Header("Enemy Type")]
     //public bool melee;
     //public bool shooting;
@@ -51,6 +53,7 @@ public class EnemyAI : MonoBehaviour
 
     public void Start()
     {
+        footstepAudio = GetComponent<AudioSource>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -71,6 +74,18 @@ public class EnemyAI : MonoBehaviour
         else
         {
             rb.linearVelocity = Vector2.zero;
+        }
+
+        if(rb.linearVelocity.magnitude > 0.1f)
+        {
+            if(!footstepAudio.isPlaying)
+            {
+                footstepAudio.Play();
+            }
+        }
+        else
+        {
+            footstepAudio.Pause();
         }
     }
 
