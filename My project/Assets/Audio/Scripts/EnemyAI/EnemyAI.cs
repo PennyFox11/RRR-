@@ -10,7 +10,7 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("Pathfinding")] //this will show in the script editor
     private Transform target;   //the target the enemy is targeting
-    public float activateDistance = 50f; //this will be the activation distance
+    public float activateDistance = 5f; //this will be the activation distance
     public float pathUpdateSeconds = 0.5f; //this is how often we are going to update the A* algorithm that is used to detect colliders
 
     [Header("Physics")]

@@ -1150,12 +1150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d7ad51bac5b1834a94859bb479c6d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  activateDistance: 10
+  activateDistance: 5
   pathUpdateSeconds: 0.5
   speed: 2.5
   nextWaypointDistance: 3
   followEnabled: 1
-  directionLookEnabled: 1
+  directionLookEnabled: 0
   withinStoppingDistance: 0
   attackDistance: 0.5
 --- !u!1 &6626785646118216663
