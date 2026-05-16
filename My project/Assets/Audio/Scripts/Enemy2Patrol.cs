@@ -8,6 +8,14 @@
 //Author: Unity Discussions
 //Date: June 2021
 //Availability: https://discussions.unity.com/t/ontriggerenter-ontriggerexit-mechanics/844873 
+
+//https://docs.unity3d.com/Manual/AnimationParameters.html
+
+//https://docs.unity3d.com/ScriptReference/Vector3.Distance.html
+
+//https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Vector3-normalized.html 
+
+//https://docs.unity3d.com/Manual/class-BlendTree.html 
 using UnityEngine;
 
 public class Enemy2Patrol : MonoBehaviour
@@ -18,10 +26,13 @@ public class Enemy2Patrol : MonoBehaviour
     public float speed; //speed of enemy (adjust in inspector)
 
     public bool isPaused = false; //patrol is currently not paused
+    private Animator animator;
+    private Vector2 movementDirection;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         targetPoint = 0; //start at zero
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,14 +40,29 @@ public class Enemy2Patrol : MonoBehaviour
     {
         if (isPaused) //exit the function if the patrol is paused
         {
+            animator.SetBool("isMoving", false);
             return;
         }
         
-        if(transform.position == patrolPoints[targetPoint].position) //if enemy reaches target position
+        Vector3 target = patrolPoints[targetPoint].position;
+        
+        movementDirection = (target - transform.position).normalized;
+
+        animator.SetFloat("MoveX", movementDirection.x);
+        animator.SetFloat("MoveY", movementDirection.y);
+
+        animator.SetBool("isMoving", true);
+
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            target,
+            speed * Time.deltaTime
+        );
+
+        if (Vector3.Distance(transform.position, target) < 0.05f)
         {
-            increaseTargetInt(); //call method
+            increaseTargetInt();
         }
-        transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime); //move from current position to target position at a constant speed
     }
 
     void increaseTargetInt() 
