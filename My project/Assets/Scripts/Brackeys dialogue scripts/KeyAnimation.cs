@@ -1,9 +1,12 @@
 using UnityEngine;
+//This was from tutor help
 
 public class KeyAnimation : MonoBehaviour
 {
     public Animator keyAnimator;
     private SpriteRenderer spriteRenderer;
+
+    private bool hasPlayed = false;
 
     void Start()
     {
@@ -15,6 +18,7 @@ public class KeyAnimation : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            hasPlayed = true;
             spriteRenderer.enabled = true;
             keyAnimator.SetTrigger("PlayerIn");
         }
