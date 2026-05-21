@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eab611608bc8f6c4d89b9db285c71bee
+guid: b3468b243a4cf154cbb1316e882aec81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9151817047581434833
-    second: new_ rose_idle_stance_png_0
+      213: -3877974564479631653
+    second: RRLspritesheet01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new_ rose_idle_stance_png_0
+      name: RRLspritesheet01_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 22
-        width: 140
-        height: 381
+        x: 17
+        y: 8
+        width: 125
+        height: 267
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d3a47acd19c10f70800000000000000
-      internalID: 9151817047581434833
+      spriteID: bdef0341eaaae2ac0800000000000000
+      internalID: -3877974564479631653
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c5397949597de86479d4f1be1f9c76a6
+    spriteID: 284e3ec4a4015fb4d8c3c1cf84898d31
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      new_ rose_idle_stance_png_0: 9151817047581434833
+      RRLspritesheet01_0: -3877974564479631653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

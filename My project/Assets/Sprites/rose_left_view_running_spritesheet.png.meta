@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 68d8b717ff9f3804a9673b782f109a1c
+guid: 50fa73cd599e7e44cb918d5d23fd9df2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6902096032607903665
-    second: Rose Running spritesheet_0
+      213: 6455860961498984690
+    second: rose_left_view_running_spritesheet_0
   - first:
-      213: 5260324297716253401
-    second: Rose Running spritesheet_1
+      213: 8131449874705945346
+    second: rose_left_view_running_spritesheet_1
   - first:
-      213: 7551456733880158760
-    second: Rose Running spritesheet_2
+      213: -3925408717804337832
+    second: rose_left_view_running_spritesheet_2
   - first:
-      213: 5089779654411212361
-    second: Rose Running spritesheet_3
+      213: -5360361479864724896
+    second: rose_left_view_running_spritesheet_3
   - first:
-      213: -79186259735198765
-    second: Rose Running spritesheet_4
+      213: -5381892504972228124
+    second: rose_left_view_running_spritesheet_4
   - first:
-      213: -6390924618239502320
-    second: Rose Running spritesheet_5
+      213: 4678586205827664260
+    second: rose_left_view_running_spritesheet_5
   - first:
-      213: -4038264478868600641
-    second: Rose Running spritesheet_6
+      213: -4840183473499748192
+    second: rose_left_view_running_spritesheet_6
   - first:
-      213: 5746150370545318333
-    second: Rose Running spritesheet_7
+      213: -5585639403702981240
+    second: rose_left_view_running_spritesheet_7
   - first:
-      213: 7476818910081076620
-    second: Rose Running spritesheet_8
+      213: 9074236162708296651
+    second: rose_left_view_running_spritesheet_8
   - first:
-      213: 2239632078252142467
-    second: Rose Running spritesheet_9
+      213: -135156174389872347
+    second: rose_left_view_running_spritesheet_9
   - first:
-      213: -6366407647724430351
-    second: Rose Running spritesheet_10
+      213: -4244715356776140549
+    second: rose_left_view_running_spritesheet_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,57 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rose Running spritesheet_0
+      name: rose_left_view_running_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
-        width: 130
-        height: 269
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bf1a35d5cb29cf50800000000000000
-      internalID: 6902096032607903665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose Running spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 9
-        width: 178
-        height: 265
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d2cbb0141d600940800000000000000
-      internalID: 5260324297716253401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose Running spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 329
+        x: 1
         y: 3
-        width: 210
-        height: 271
+        width: 298
+        height: 242
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 946d03ef0a782a640800000000000000
-      internalID: 5089779654411212361
+      spriteID: 2f075710753d79950800000000000000
+      internalID: 6455860961498984690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose Running spritesheet_4
+      name: rose_left_view_running_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 567
-        y: 3
-        width: 199
-        height: 260
+        x: 184
+        y: 4
+        width: 362
+        height: 242
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,19 +167,85 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d3446d248ca6eef0800000000000000
-      internalID: -79186259735198765
+      spriteID: 2031eba2496b8d070800000000000000
+      internalID: 8131449874705945346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose Running spritesheet_5
+      name: rose_left_view_running_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 809
-        y: 3
-        width: 227
+        x: 581
+        y: 6
+        width: 247
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8550d01a1952689c0800000000000000
+      internalID: -3925408717804337832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_left_view_running_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 139
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062d9fc62ab2c95b0800000000000000
+      internalID: -5360361479864724896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_left_view_running_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 4
+        width: 225
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e90bcdf74daf45b0800000000000000
+      internalID: -5381892504972228124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_left_view_running_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 4
+        width: 197
         height: 258
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -233,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01819879befde47a0800000000000000
-      internalID: -6390924618239502320
+      spriteID: 4898661bd5dade040800000000000000
+      internalID: 4678586205827664260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose Running spritesheet_7
+      name: rose_left_view_running_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 5
-        width: 249
-        height: 257
+        x: 1380
+        y: 4
+        width: 208
+        height: 269
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db9355e415d6ebf40800000000000000
-      internalID: 5746150370545318333
+      spriteID: 0a8c45676c634dcb0800000000000000
+      internalID: -4840183473499748192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose Running spritesheet_8
+      name: rose_left_view_running_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 7
-        width: 262
-        height: 248
+        x: 1569
+        y: 117
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8d4e415f2ff2c760800000000000000
-      internalID: 7476818910081076620
+      spriteID: 88debda6e82db72b0800000000000000
+      internalID: -5585639403702981240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose Running spritesheet_9
+      name: rose_left_view_running_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 2
-        width: 300
-        height: 244
+        x: 1589
+        y: 10
+        width: 176
+        height: 263
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,8 +321,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38fe9c35285c41f10800000000000000
-      internalID: 2239632078252142467
+      spriteID: bc35b3e66b92eed70800000000000000
+      internalID: 9074236162708296651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_left_view_running_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 8
+        width: 127
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5297a4cec24df1ef0800000000000000
+      internalID: -135156174389872347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_left_view_running_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 118
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf076ba5fddb715c0800000000000000
+      internalID: -4244715356776140549
       vertices: []
       indices: 
       edges: []
@@ -309,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dfd74cbb558382342b053d56cea2af31
+    spriteID: 9c34bd1441844044bbae19687cff0a88
     internalID: 0
     vertices: []
     indices: 
@@ -317,19 +383,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Rose Running spritesheet_0: 6902096032607903665
-      Rose Running spritesheet_1: 5260324297716253401
-      Rose Running spritesheet_10: -6366407647724430351
-      Rose Running spritesheet_2: 7551456733880158760
-      Rose Running spritesheet_3: 5089779654411212361
-      Rose Running spritesheet_4: -79186259735198765
-      Rose Running spritesheet_5: -6390924618239502320
-      Rose Running spritesheet_6: -4038264478868600641
-      Rose Running spritesheet_7: 5746150370545318333
-      Rose Running spritesheet_8: 7476818910081076620
-      Rose Running spritesheet_9: 2239632078252142467
+      rose_left_view_running_spritesheet_0: 6455860961498984690
+      rose_left_view_running_spritesheet_1: 8131449874705945346
+      rose_left_view_running_spritesheet_10: -4244715356776140549
+      rose_left_view_running_spritesheet_2: -3925408717804337832
+      rose_left_view_running_spritesheet_3: -5360361479864724896
+      rose_left_view_running_spritesheet_4: -5381892504972228124
+      rose_left_view_running_spritesheet_5: 4678586205827664260
+      rose_left_view_running_spritesheet_6: -4840183473499748192
+      rose_left_view_running_spritesheet_7: -5585639403702981240
+      rose_left_view_running_spritesheet_8: 9074236162708296651
+      rose_left_view_running_spritesheet_9: -135156174389872347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

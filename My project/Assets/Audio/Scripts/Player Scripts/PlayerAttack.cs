@@ -27,7 +27,8 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
-    //public Animation anim;
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
 
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers;
@@ -36,6 +37,9 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>(); //refers to/gets the audio source
+
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -59,12 +63,12 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    private void Attack() //the "attack" method
+    public void Attack() //the "attack" method
     {
         attacking = true;
         attackArea.SetActive(true);
 
-        //anim.Play("Attack");
+        anim.Play("Attack1"); //attack animation
 
         BoxCollider2D box = attackArea.GetComponent<BoxCollider2D>();
 
