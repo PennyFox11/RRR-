@@ -20,13 +20,13 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public int NumberOfKeys;
     public TextMeshProUGUI keyText;
 
-    [SerializeField] private GameObject Winscreen;
+    //[SerializeField] private GameObject Winscreen;
 
 
-    void Start()
-    {
-        Winscreen.SetActive(false);
-    }
+    //void Start()
+    //{
+        //Winscreen.SetActive(false);
+    //}
 
     void Update()
     {
@@ -50,7 +50,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
         if (NumberOfKeys >= maxKey)
         {
             Debug.Log("Congratulations you have passed");
-            Winscreen.SetActive(true);
+            //Winscreen.SetActive(true);
         }
     }
 

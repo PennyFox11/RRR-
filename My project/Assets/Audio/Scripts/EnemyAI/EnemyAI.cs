@@ -9,8 +9,8 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Pathfinding")] //this will show in the script editor
-    public Transform target;   //the target the enemy is targeting
-    public float activateDistance = 50f; //this will be the activation distance
+    private Transform target;   //the target the enemy is targeting
+    public float activateDistance = 5f; //this will be the activation distance
     public float pathUpdateSeconds = 0.5f; //this is how often we are going to update the A* algorithm that is used to detect colliders
 
     [Header("Physics")]
@@ -25,6 +25,8 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Combat")]
     public float attackDistance = 0.5f; // The distance at which the enemy will initiate an attack
+
+     private AudioSource footstepAudio;
 
     //[Header("Enemy Type")]
     //public bool melee;
@@ -51,8 +53,14 @@ public class EnemyAI : MonoBehaviour
 
     public void Start()
     {
+        footstepAudio = GetComponent<AudioSource>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if(playerObject != null)
+        {
+            target = playerObject.transform;
+        }
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
     }
@@ -66,6 +74,18 @@ public class EnemyAI : MonoBehaviour
         else
         {
             rb.linearVelocity = Vector2.zero;
+        }
+
+        if(rb.linearVelocity.magnitude > 0.1f)
+        {
+            if(!footstepAudio.isPlaying)
+            {
+                footstepAudio.Play();
+            }
+        }
+        else
+        {
+            footstepAudio.Pause();
         }
     }
 
@@ -151,7 +171,11 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInDistance()
     {
-        return Vector2.Distance(transform.position, target.transform.position) < activateDistance; //checking if the enemy is within the activation distance 
+        if (target == null)
+        {
+            return false;
+        }
+        return Vector2.Distance(transform.position, target.position) < activateDistance; //checking if the enemy is within the activation distance 
     }
 
     private void OnPathComplete(Path p)

@@ -13,7 +13,7 @@ using UnityEngine;
 
 public class GuardHealth : MonoBehaviour
 {
-    public GameObject door;
+    private GameObject door;
     
     private bool doorDestroyed;
     
@@ -28,6 +28,7 @@ public class GuardHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar2.SetMaxHealth(maxHealth);
+        door = GameObject.FindGameObjectWithTag("Door"); //this should only be applied to the final guard
     }
 
     public void ChangeHealth (int amount) //determines how the enemy takes damage and how it is displayed
