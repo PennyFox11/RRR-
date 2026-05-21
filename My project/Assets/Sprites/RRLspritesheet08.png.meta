@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: eab611608bc8f6c4d89b9db285c71bee
+guid: f75bab4deb68e934390e8d1cb9bc4618
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9151817047581434833
-    second: new_ rose_idle_stance_png_0
+      213: 8175544896064486723
+    second: RRLspritesheet08_0
+  - first:
+      213: 8868125515863294615
+    second: RRLspritesheet08_1
+  - first:
+      213: -2955865433651968078
+    second: RRLspritesheet08_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new_ rose_idle_stance_png_0
+      name: RRLspritesheet08_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 22
-        width: 140
-        height: 381
+        x: 0
+        y: 0
+        width: 299
+        height: 242
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d3a47acd19c10f70800000000000000
-      internalID: 9151817047581434833
+      spriteID: 34d7e2f54ce557170800000000000000
+      internalID: 8175544896064486723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRLspritesheet08_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 195
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7920c9cdb29e11b70800000000000000
+      internalID: 8868125515863294615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRLspritesheet08_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 110
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b781578c08aaf6d0800000000000000
+      internalID: -2955865433651968078
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c5397949597de86479d4f1be1f9c76a6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      new_ rose_idle_stance_png_0: 9151817047581434833
+      RRLspritesheet08_0: 8175544896064486723
+      RRLspritesheet08_1: 8868125515863294615
+      RRLspritesheet08_2: -2955865433651968078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
