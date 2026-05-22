@@ -26,7 +26,7 @@ public class Enemy2Patrol : MonoBehaviour
     public float speed; //speed of enemy (adjust in inspector)
 
     public bool isPaused = false; //patrol is currently not paused
-    private Animator animator;
+    public Animator animator;
     private Vector2 movementDirection;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,6 +50,9 @@ public class Enemy2Patrol : MonoBehaviour
 
         animator.SetFloat("MoveX", movementDirection.x);
         animator.SetFloat("MoveY", movementDirection.y);
+
+        animator.SetFloat("LastMoveX", movementDirection.x);
+        animator.SetFloat("LastMoveY", movementDirection.y);
 
         animator.SetBool("isMoving", true);
 

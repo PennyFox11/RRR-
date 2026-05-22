@@ -18,6 +18,7 @@ public class DogDetection : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             patrolScript.isPaused = true;
+            patrolScript.animator.SetBool("isAlert", true);
         }
     }
 
@@ -26,6 +27,7 @@ public class DogDetection : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             patrolScript.isPaused = false;
+            patrolScript.animator.SetBool("isAlert", false);
         }
     }
 }
