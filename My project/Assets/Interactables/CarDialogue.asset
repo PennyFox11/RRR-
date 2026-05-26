@@ -19,7 +19,7 @@ MonoBehaviour:
   - It was a Porsche.
   - He was so excited to give it to me, his cheeks were as red that damn car.
   - Where did that happy man go..?
-  autoProgressLines: 01010100
+  autoProgressLines: 01010101
   autoProgressDisplay: 1
   typingSpeed: 0.02
   voiceSound: {fileID: 8300000, guid: c5dff30ae6fa1ca498d8daba9d6128b6, type: 3}
