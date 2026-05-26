@@ -62,6 +62,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     void NextLine()
     {
+        
         if (isTyping)
         {
             StopAllCoroutines();
@@ -85,16 +86,20 @@ public class NPC : MonoBehaviour, IInteractable
         {
             isTyping = true;
             dialogueText.text = "";
+        if (!source.isPlaying)
+        {
+            source.Play(); //play type sound
+        }
+        
+        
+           
+        
 
-            foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
+        foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
             {
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(dialogueData.typingSpeed); //Dialogue text speed, types out every letter at a specific rate
 
-            if (!source.isPlaying)
-            {
-                source.Play(); //play type sound
-            }
         }
 
             isTyping = false; //Dialogue line is complete
@@ -114,7 +119,13 @@ public class NPC : MonoBehaviour, IInteractable
         isDialogueActive = false;
         dialogueText.text = "";
         dialoguePanel.SetActive(false);
-        
+
+       // if (source.isPlaying)
+        {
+            source.Stop(); //stop typing sound
+        }
+
+
     }
 
 }
