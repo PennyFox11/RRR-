@@ -20,6 +20,11 @@ public class NPC : MonoBehaviour, IInteractable
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
 
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
     public bool CanInteract()
     {
         return !isDialogueActive;
@@ -45,7 +50,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void StartDialogue()
     {
-        source = GetComponent<AudioSource>();
+        //source = GetComponent<AudioSource>();
         isDialogueActive = true;
         dialogueIndex = 0;
 
@@ -118,11 +123,18 @@ public class NPC : MonoBehaviour, IInteractable
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueText.text = "";
-        dialoguePanel.SetActive(false);
-
-       // if (source.isPlaying)
+        if (dialoguePanel != null)
         {
-            source.Stop(); //stop typing sound
+            dialoguePanel.SetActive(false);
+        }
+        
+        if (source.isPlaying)
+        {
+            if(source != null) // check it exists
+            {
+                source.Stop(); //stop typing sound
+            }
+                
         }
 
 
