@@ -18,7 +18,7 @@ MonoBehaviour:
   - I remeber how happy Iris would get watchng the butterflies flutter around the
     flowers.
   - I wonder if she can still see them from here...
-  autoProgressLines: 0100
+  autoProgressLines: 0101
   autoProgressDisplay: 1
   typingSpeed: 0.03
   voiceSound: {fileID: 8300000, guid: c5dff30ae6fa1ca498d8daba9d6128b6, type: 3}

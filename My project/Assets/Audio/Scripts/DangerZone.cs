@@ -55,10 +55,10 @@ public class DangerZone : MonoBehaviour
             if(!source.isPlaying) 
             {
                 source.Play(); //play attack sound
-                anim.Play("EnemyAttack"); //attack animation
+               // anim.Play("EnemyAttack"); //attack animation
             }
         }
 
-        anim.SetBool("attack", isAttacking);
+       // anim.SetBool("attack", isAttacking);
     }
 }

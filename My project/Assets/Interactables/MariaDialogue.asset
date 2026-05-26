@@ -26,8 +26,8 @@ MonoBehaviour:
   - If you get injured during combat, there's a first aid kit in the bathroom.
   - 'ALSO Signora, collect the diamonds scattered in some of the rooms.  '
   - It doesn't to collect your alimony a little early, right? ;)
-  autoProgressLines: 01010101010101010100
+  autoProgressLines: 01010101010101010101
   autoProgressDisplay: 1
-  typingSpeed: 0.03
+  typingSpeed: 0.02
   voiceSound: {fileID: 8300000, guid: c5dff30ae6fa1ca498d8daba9d6128b6, type: 3}
   voicePitch: 2
