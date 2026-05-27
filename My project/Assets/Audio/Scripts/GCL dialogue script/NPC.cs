@@ -2,11 +2,12 @@
 //Author: Game Code Library
 //Date: 23 February 2025
 //Code Version: Unity 2022.3.20f1 LTS
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+using static Unity.VisualScripting.Member;
 
 public class NPC : MonoBehaviour, IInteractable
 {
@@ -14,9 +15,15 @@ public class NPC : MonoBehaviour, IInteractable
     public GameObject dialoguePanel;
     public Text dialogueText, nameText;
     public Image portraitImage;
+    AudioSource source;
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     public bool CanInteract()
     {
@@ -43,6 +50,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void StartDialogue()
     {
+        //source = GetComponent<AudioSource>();
         isDialogueActive = true;
         dialogueIndex = 0;
 
@@ -59,6 +67,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     void NextLine()
     {
+        
         if (isTyping)
         {
             StopAllCoroutines();
@@ -82,12 +91,21 @@ public class NPC : MonoBehaviour, IInteractable
         {
             isTyping = true;
             dialogueText.text = "";
+        if (!source.isPlaying)
+        {
+            source.Play(); //play type sound
+        }
+        
+        
+           
+        
 
-            foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
+        foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
             {
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(dialogueData.typingSpeed); //Dialogue text speed, types out every letter at a specific rate
-            }
+
+        }
 
             isTyping = false; //Dialogue line is complete
 
@@ -105,8 +123,21 @@ public class NPC : MonoBehaviour, IInteractable
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueText.text = "";
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null)
+        {
+            dialoguePanel.SetActive(false);
+        }
         
+        if (source.isPlaying)
+        {
+            if(source != null) // check it exists
+            {
+                source.Stop(); //stop typing sound
+            }
+                
+        }
+
+
     }
 
 }

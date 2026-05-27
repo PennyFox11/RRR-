@@ -4,15 +4,23 @@
 //Code version: Unity 6000.3.8f1
 //Availability: https://learn.unity.com/course/2D-adventure-robot-repair/unit/health-system/tutorial/add-damage-zones-to-decrease-health-static-hazards?version=6.3//
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DangerZone : MonoBehaviour
 {
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
+
     AudioSource source; //refer to the audio source component
     bool playerDead = false;
+    bool isAttacking = false;
 
     void Awake()
     {
         source = GetComponent<AudioSource>(); //get the audio source component
+
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnEnable() //refers to game over function
@@ -47,7 +55,10 @@ public class DangerZone : MonoBehaviour
             if(!source.isPlaying) 
             {
                 source.Play(); //play attack sound
+               // anim.Play("EnemyAttack"); //attack animation
             }
         }
+
+       // anim.SetBool("attack", isAttacking);
     }
 }

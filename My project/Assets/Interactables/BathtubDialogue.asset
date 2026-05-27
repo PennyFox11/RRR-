@@ -17,8 +17,8 @@ MonoBehaviour:
   dialogueLines:
   - I should've known back then when he looked at my body with such disappointment.
   - I should've known.
-  autoProgressLines: 0100
-  autoProgressDisplay: 1.5
-  typingSpeed: 0.05
-  voiceSound: {fileID: 8300000, guid: b8549acc585cb1444afe2f6e923b2d54, type: 3}
+  autoProgressLines: 0101
+  autoProgressDisplay: 1
+  typingSpeed: 0.02
+  voiceSound: {fileID: 8300000, guid: c5dff30ae6fa1ca498d8daba9d6128b6, type: 3}
   voicePitch: 1

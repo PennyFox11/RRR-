@@ -95,7 +95,10 @@ public class CountdownTimer : MonoBehaviour
         AudioSource.PlayClipAtPoint(catchSound, transform.position);
         Debug.Log("Time is up!");
         timerText.gameObject.SetActive(false); //text disappears
+        timerImage.gameObject.SetActive(false);
 
         PlayerHealth.TriggerGameOver(); //trigger the game over events
+        
+
     }
 }

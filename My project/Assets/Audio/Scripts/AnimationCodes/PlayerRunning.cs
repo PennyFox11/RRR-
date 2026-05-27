@@ -30,22 +30,26 @@ public class PlayerRunning : MonoBehaviour
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             moveDirection.y += 1;
+            Debug.Log("Running Left");
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             moveDirection.y -= 1;
+            Debug.Log("Running Left");
         }
         if (Input.GetKey(KeyCode.A)  || Input.GetKey(KeyCode.LeftArrow))
         {
             moveDirection.x -= 1;
             isRunning = true;
             transform.localScale = new Vector3(-1, transform.localScale.y);
+            Debug.Log("Running Left");
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             moveDirection.x += 1;
             isRunning = true;
             transform.localScale = new Vector3(1, transform.localScale.y);
+            Debug.Log("Running Left");
         }
 
         isRunning = moveDirection != Vector3.zero;
