@@ -17,7 +17,7 @@ public class GuardHealth : MonoBehaviour
     
     private bool doorDestroyed;
     
-    [SerializeField] public int maxHealth = 50; //adjust this in the inspector; public and can be accessed from other scripts
+    [SerializeField] public int maxHealth = 100; //adjust this in the inspector; public and can be accessed from other scripts
     [SerializeField] int currentHealth; // adjust in inspector
 
     [SerializeField] private UIBlink healthBarBlink;

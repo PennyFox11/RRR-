@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 //Availability: https://www.youtube.com/watch?v=JivuXdrIHK0 
 public class PauseMenu : MonoBehaviour
 {
-  public static bool GameIsPaused = false;
-
   public GameObject pauseMenuUI;
+
+  public static bool GameIsPaused;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(GameIsPaused)
+            if(GameStateManager.Instance.isPaused)
             {
                 Resume();
             }
@@ -30,29 +30,31 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         GameIsPaused = false;
+        GameStateManager.Instance.ResumeGame();
+
         
     }
 
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         GameIsPaused = true;
+        GameStateManager.Instance.PauseGame();
     }
 
     public void Quit()
     {
-        Time.timeScale = 1f;
-        GameIsPaused = false;
+        GameStateManager.Instance.ResumeGame();
         SceneManager.LoadScene("Start Menu");
     }
 
     public void Settings()
     {
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-        SceneManager.LoadScene("Settings");
+        pauseMenuUI.SetActive(false);
+        SceneManager.LoadScene(
+            "Settings", 
+            LoadSceneMode.Additive
+            );  
     }
 }
