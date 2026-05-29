@@ -16,6 +16,7 @@
 //Code version: Unity 6000.3.8f1
 //Availability: https://learn.unity.com/ 
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -79,12 +80,15 @@ public class PlayerAttack : MonoBehaviour
             enemyLayers
         );
 
+        HashSet<GuardHealth> damagedEnemies = new HashSet<GuardHealth>();
+
         foreach (Collider2D enemy in hitEnemies) 
         {
-            GuardHealth guardHealth = enemy.GetComponent<GuardHealth>(); //find the enemy's health
+            GuardHealth guardHealth = enemy.GetComponentInParent<GuardHealth>(); //find the enemy's health
 
-            if (guardHealth != null) //if the health exists / is not zero
+            if (guardHealth != null && !damagedEnemies.Contains(guardHealth)) //if the health exists / is not zero
             {
+                damagedEnemies.Add(guardHealth);
                 guardHealth.ChangeHealth(-damage); //reduce health
 
                 if(!source.isPlaying)

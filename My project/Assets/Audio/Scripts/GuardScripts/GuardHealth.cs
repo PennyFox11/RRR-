@@ -24,6 +24,10 @@ public class GuardHealth : MonoBehaviour
 
     public HealthBar2 healthBar2; // public variable; UI of guard health 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        Debug.Log(gameObject.name + " Awake maxHealth = " + maxHealth);
+    }
     void Start() //runs once at the beginning; enemy starts with full health (shown in health bar)
     {
         currentHealth = maxHealth;
