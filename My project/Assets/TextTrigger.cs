@@ -19,7 +19,8 @@ public class TriggerText : MonoBehaviour
         {
             textObject.SetActive(true);
            Destroy(textObject, 3f);
-
+            Destroy(gameObject,3f);
+          
         }
         else
         {
