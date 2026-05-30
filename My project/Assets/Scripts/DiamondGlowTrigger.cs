@@ -1,16 +1,14 @@
 using UnityEngine;
-//This was from tutor help
 
-public class KeyAnimation : MonoBehaviour
+public class DiamondGlowTrigger : MonoBehaviour
 {
-    public Animator keyAnimator;
+    public Animator glowAnimator;
     private SpriteRenderer spriteRenderer;
-
     private bool hasPlayed = false;
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
         spriteRenderer.enabled = false;
     }
 
@@ -20,7 +18,7 @@ public class KeyAnimation : MonoBehaviour
         {
             hasPlayed = true;
             spriteRenderer.enabled = true;
-            keyAnimator.SetTrigger("PlayerIn");
+            glowAnimator.SetTrigger("collect");
         }
     }
 
@@ -31,5 +29,4 @@ public class KeyAnimation : MonoBehaviour
             spriteRenderer.enabled = false;
         }
     }
-
 }
