@@ -22,6 +22,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public Animator diamondGlowAnimator;
     public int NumberOfKeys;
     public TextMeshProUGUI keyText;
+    public Animator keyGlowAnimator;
 
     
 
@@ -54,6 +55,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public void KeyCollected()
     {
         NumberOfKeys++;
+        keyGlowAnimator.SetTrigger("key");
         if (NumberOfKeys >= maxKey)
         {
             Debug.Log("Congratulations you have passed");
