@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 4f88b8e9ca1886b4984211d99172e9fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8655158132137567164
+    second: end game text asset_0
+  - first:
+      213: -6225164132382983329
+    second: end game text asset_1
+  - first:
+      213: 2571625843572252008
+    second: end game text asset_2
+  - first:
+      213: -4137194385280117484
+    second: end game text asset_3
+  - first:
+      213: -7844012141031870595
+    second: end game text asset_4
+  - first:
+      213: -5151412856492310647
+    second: end game text asset_5
+  - first:
+      213: 4822848769141169604
+    second: end game text asset_6
+  - first:
+      213: 8006059162123555077
+    second: end game text asset_7
+  - first:
+      213: 8625730651552868434
+    second: end game text asset_8
+  - first:
+      213: -8278463673857387754
+    second: end game text asset_9
+  - first:
+      213: -2995423108470997138
+    second: end game text asset_10
+  - first:
+      213: -6526104059102661727
+    second: end game text asset_11
+  - first:
+      213: -7156100676354121513
+    second: end game text asset_12
+  - first:
+      213: -7502729089904925282
+    second: end game text asset_13
+  - first:
+      213: -1659675424468271726
+    second: end game text asset_14
+  - first:
+      213: 3472940900212573811
+    second: end game text asset_15
+  - first:
+      213: 3095716828298374094
+    second: end game text asset_16
+  - first:
+      213: 3772877567868753091
+    second: end game text asset_17
+  - first:
+      213: 8606030055253715321
+    second: end game text asset_18
+  - first:
+      213: -546839219576711709
+    second: end game text asset_19
+  - first:
+      213: 8313691529274529616
+    second: end game text asset_20
+  - first:
+      213: 1550339642311479502
+    second: end game text asset_21
+  - first:
+      213: 8513121533210577957
+    second: end game text asset_22
+  - first:
+      213: -5282892477341824671
+    second: end game text asset_23
+  - first:
+      213: 6372519954022117214
+    second: end game text asset_24
+  - first:
+      213: 8685979178933900776
+    second: end game text asset_25
+  - first:
+      213: -8886662266501368915
+    second: end game text asset_26
+  - first:
+      213: 8844337318745028106
+    second: end game text asset_27
+  - first:
+      213: 2588380849160494950
+    second: end game text asset_28
+  - first:
+      213: -7280198504975892110
+    second: end game text asset_29
+  - first:
+      213: -5600485143225096823
+    second: end game text asset_30
+  - first:
+      213: 9159863121216686248
+    second: end game text asset_31
+  - first:
+      213: -681204275630490408
+    second: end game text asset_32
+  - first:
+      213: 6865688688950545233
+    second: end game text asset_33
+  - first:
+      213: 422461650474341467
+    second: end game text asset_34
+  - first:
+      213: -3642334042478626885
+    second: end game text asset_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: end game text asset_0
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 731
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c5b1b2983b2e780800000000000000
+      internalID: -8655158132137567164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 464
+        width: 1140
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b3fc43436cb99a0800000000000000
+      internalID: -6225164132382983329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 485
+        width: 192
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d9655641040b320800000000000000
+      internalID: 2571625843572252008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_3
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 714
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41553aa50abb596c0800000000000000
+      internalID: -4137194385280117484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 231
+        width: 249
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fa1ff5488742390800000000000000
+      internalID: -7844012141031870595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_5
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 592
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f3565ec418288b0800000000000000
+      internalID: -5151412856492310647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 529
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdd61a27633ee240800000000000000
+      internalID: 4822848769141169604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_7
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 573
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501d229d36c3b1f60800000000000000
+      internalID: 8006059162123555077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_8
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 504
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258e1069350c4b770800000000000000
+      internalID: 8625730651552868434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_9
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 515
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61351c9562dfc1d80800000000000000
+      internalID: -8278463673857387754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_10
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 476
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ff693ad8e1e66d0800000000000000
+      internalID: -2995423108470997138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 461
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a373fd5fee9e65a0800000000000000
+      internalID: -6526104059102661727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 449
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0eaf8795c60bc90800000000000000
+      internalID: -7156100676354121513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 443
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e952a36d4a3f0e790800000000000000
+      internalID: -7502729089904925282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_14
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 442
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d7f1aaef5a7f8e0800000000000000
+      internalID: -1659675424468271726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_15
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 266
+        width: 356
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376881b295d523030800000000000000
+      internalID: 3472940900212573811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 257
+        width: 434
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb6ce3bd0236fa20800000000000000
+      internalID: 3095716828298374094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_17
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 213
+        width: 354
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c45bdd8824fb5430800000000000000
+      internalID: 3772877567868753091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_18
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 246
+        width: 270
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979abb11db2ce6770800000000000000
+      internalID: 8606030055253715321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 283
+        width: 182
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5d0e780ac3968f0800000000000000
+      internalID: -546839219576711709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_20
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 277
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0571596e56a206370800000000000000
+      internalID: 8313691529274529616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec09e2dc0b9e38510800000000000000
+      internalID: 1550339642311479502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_22
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 260
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cceb41eeea42670800000000000000
+      internalID: 8513121533210577957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_23
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 264
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169057528456fa6b0800000000000000
+      internalID: -5282892477341824671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_24
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 246
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fa397922dbf6850800000000000000
+      internalID: 6372519954022117214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_25
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 231
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e55bcefa0cca8870800000000000000
+      internalID: 8685979178933900776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_26
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 201
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3715e80cb3ca480800000000000000
+      internalID: -8886662266501368915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_27
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 16
+        width: 222
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06378d9ee56dba70800000000000000
+      internalID: 8844337318745028106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_28
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 0
+        width: 417
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f92a12ba6cbe320800000000000000
+      internalID: 2588380849160494950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_29
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 187
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2710598280a87fa90800000000000000
+      internalID: -7280198504975892110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_30
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 13
+        width: 306
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98527345f641742b0800000000000000
+      internalID: -5600485143225096823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_31
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 138
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8425b4afe5e1f70800000000000000
+      internalID: 9159863121216686248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_32
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 128
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc319b0250eb86f0800000000000000
+      internalID: -681204275630490408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_33
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 85
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b80539c73d74f50800000000000000
+      internalID: 6865688688950545233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_34
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 57
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b549fbff1a2ecd500800000000000000
+      internalID: 422461650474341467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end game text asset_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7bfbc7c74d37dc0800000000000000
+      internalID: -3642334042478626885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      end game text asset_0: -8655158132137567164
+      end game text asset_1: -6225164132382983329
+      end game text asset_10: -2995423108470997138
+      end game text asset_11: -6526104059102661727
+      end game text asset_12: -7156100676354121513
+      end game text asset_13: -7502729089904925282
+      end game text asset_14: -1659675424468271726
+      end game text asset_15: 3472940900212573811
+      end game text asset_16: 3095716828298374094
+      end game text asset_17: 3772877567868753091
+      end game text asset_18: 8606030055253715321
+      end game text asset_19: -546839219576711709
+      end game text asset_2: 2571625843572252008
+      end game text asset_20: 8313691529274529616
+      end game text asset_21: 1550339642311479502
+      end game text asset_22: 8513121533210577957
+      end game text asset_23: -5282892477341824671
+      end game text asset_24: 6372519954022117214
+      end game text asset_25: 8685979178933900776
+      end game text asset_26: -8886662266501368915
+      end game text asset_27: 8844337318745028106
+      end game text asset_28: 2588380849160494950
+      end game text asset_29: -7280198504975892110
+      end game text asset_3: -4137194385280117484
+      end game text asset_30: -5600485143225096823
+      end game text asset_31: 9159863121216686248
+      end game text asset_32: -681204275630490408
+      end game text asset_33: 6865688688950545233
+      end game text asset_34: 422461650474341467
+      end game text asset_35: -3642334042478626885
+      end game text asset_4: -7844012141031870595
+      end game text asset_5: -5151412856492310647
+      end game text asset_6: 4822848769141169604
+      end game text asset_7: 8006059162123555077
+      end game text asset_8: 8625730651552868434
+      end game text asset_9: -8278463673857387754
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

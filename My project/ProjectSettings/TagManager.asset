@@ -12,11 +12,12 @@ TagManager:
   - diamond
   - Enemy
   - Door
+  - Threshold
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Processing
   - Water
   - UI
   - background
