@@ -17,15 +17,17 @@ public class WinMenu : MonoBehaviour
 {
     public GameObject winMenu;
 
-    //internal static object instance;
+    internal static object instance;
 
     public void Replay()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //restart the scene that is currently active
     }
 
     public void TitleScreen()
     {
+        Time.timeScale = 1f;
         //GameStateManager.Instance.ResumeGame();
         SceneManager.LoadScene("Start Menu");
     }

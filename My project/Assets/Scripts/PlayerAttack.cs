@@ -1,19 +1,19 @@
-using UnityEngine;
+//using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
-{
+//public class PlayerAttack : MonoBehaviour
+//{
 
-    private RaycastHit2D[] hits;
- private void Update()
-    {
-        if (UserInput.instance.controls.Attack.Attack.WasPressedThisFrame())
-        {
+    //private RaycastHit2D[] hits;
+ ///private void Update()
+    //{
+        //if (UserInput.instance.controls.Attack.Attack.WasPressedThisFrame())
+        //{
             //attack
-        }
-    }
+        //}
+    //}
 
-    private void Attack()
-    {
+    //private void Attack()
+    //{
         
-    }
-}
+    //}
+//}

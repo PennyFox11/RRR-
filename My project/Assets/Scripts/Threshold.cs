@@ -8,12 +8,7 @@ public class Threshold : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        threshold = FindGameObjectWithTag("Threshold");
+        threshold = GameObject.FindGameObjectWithTag("Threshold");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
