@@ -71,10 +71,7 @@ public class EnemyAI : MonoBehaviour
     public void Start()
     {
         anim = GetComponent<Animator>();
-        if (anim)
-        {
-            anim.GetFloat("WalkingF");
-        }
+       
         
         spriteRenderer = GetComponent<SpriteRenderer>();
         footstepAudio = GetComponent<AudioSource>();
@@ -94,6 +91,7 @@ public class EnemyAI : MonoBehaviour
         if (TargetInDistance() && followEnabled)
         {
             PathFollow();
+            
         }
         else
         {
@@ -113,6 +111,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         float distance = Vector2.Distance(transform.position, target.transform.position);
+
     }
 
     private void UpdatePath()
