@@ -9,6 +9,8 @@ using System;
 //Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
+//https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Animator.html
+
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
 {
@@ -17,8 +19,12 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     private int maxDiamonds = 3;
     private int maxKey = 1;
     public TextMeshProUGUI diamondText;
+    public Animator diamondGlowAnimator;
     public int NumberOfKeys;
     public TextMeshProUGUI keyText;
+    public Animator keyGlowAnimator;
+
+    
 
     //[SerializeField] private GameObject Winscreen;
 
@@ -39,6 +45,8 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     {
         NumberOfDiamonds++;
 
+        diamondGlowAnimator.SetTrigger("collect");
+
         if (maxDiamonds >= 3)
         {
             Debug.Log("You collected all of them");
@@ -47,6 +55,7 @@ public class PlayerInventory : MonoBehaviour, IPlayerInventory
     public void KeyCollected()
     {
         NumberOfKeys++;
+        keyGlowAnimator.SetTrigger("key");
         if (NumberOfKeys >= maxKey)
         {
             Debug.Log("Congratulations you have passed");
