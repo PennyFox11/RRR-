@@ -151,7 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuardMovement
   _speed: 3
   _rotationSpeed: 100
-  _returnSpeed: 1
 --- !u!58 &7784870061731969854
 CircleCollider2D:
   m_ObjectHideFlags: 0

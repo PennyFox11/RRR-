@@ -18,6 +18,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
     private AudioSource source;
     private Vector3 startPosition; //setting a position as a "Vector"
     
@@ -29,6 +30,10 @@ public class EnemyMovement : MonoBehaviour
 
     private float _returnSpeed; //make variable of return speed (how fast enemy returns to its start position), can adjust in inspector
 
+    public float speed;
+    public bool isPaused = false;
+    public Animator animator;
+
     private Rigidbody2D _rigidbody; // references the objects rigidbody component to apply forces to game object and control it
     private PlayerAwarenessController _playerAwarenessController; //calls another script that detects player
     private Vector2 _targetDirection; //establish a 2D position as target
@@ -36,12 +41,14 @@ public class EnemyMovement : MonoBehaviour
     void Start() //when game starts, instantiate object in scene so it can move on change
     {
         startPosition = transform.position; 
+        animator = GetComponent<Animator>();
     }
     private void Awake() //Functions like "Void Start", initializes variables (in this case, rigidbody and PlayerAwarenessController script)
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
         source = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate() //update at regular, fixed intervals
@@ -106,5 +113,34 @@ public class EnemyMovement : MonoBehaviour
                 source.Play();
             }
         }
+    }
+
+    void Update()
+    {
+        if (isPaused)
+        {
+            animator.SetBool("isMoving", false);
+            return;
+        }
+        Vector3 movementDirection = Vector3.zero;
+
+        movementDirection = (_targetDirection - (Vector2)transform.position).normalized;
+
+        animator.SetFloat("MoveX", movementDirection.x);
+        animator.SetFloat("MoveY", movementDirection.y);
+
+        animator.SetFloat("LastMoveX", movementDirection.x);
+        animator.SetFloat("LastMoveY", movementDirection.y);
+
+        animator.SetBool("isMoving", true);
+
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            _targetDirection,
+            _speed * Time.deltaTime
+            );
+
+      
+
     }
 }
