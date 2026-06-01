@@ -15,22 +15,22 @@
 //Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/Manual/AnimationParameters.html
 
-//Title: Venstor3.Dista
-//Author:
-//Date:
-//Code version:
+//Title: Venstor3.Distance
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/ScriptReference/Vector3.Distance.html
 
-//Title:
-//Author:
-//Date:
-//Code version:
+//Title: Vector3.normalized
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Vector3-normalized.html 
 
-//Title:
-//Author:
-//Date:
-//Code version:
+//Title: Animation Blend Trees
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/Manual/class-BlendTree.html 
 using UnityEngine;
 

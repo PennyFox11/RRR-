@@ -9,7 +9,11 @@ using System;
 //Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
-//https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Animator.html
+//Title: Animator
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
+//Availabilty: https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Animator.html
 
 
 public class PlayerInventory : MonoBehaviour, IPlayerInventory
