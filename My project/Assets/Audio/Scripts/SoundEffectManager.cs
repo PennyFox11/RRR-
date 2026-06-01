@@ -8,25 +8,35 @@
 //Date: 18 February 2025
 //Code Version: Unity 2022.3.20f1 LTS
 
+//https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Audio.AudioMixerGroup.html
+
+//https://docs.unity3d.com/6000.4/Documentation/Manual/AudioMixer.html
+
+//https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html 
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SoundEffectManager : MonoBehaviour
 {
     private static SoundEffectManager Instance; //makes the sound effect manager callable from any of the present scripts
 
     private static AudioSource audioSource;
+
     private static AudioSource randomPitchAudioSource;
+    
     private static AudioSource voiceAudioSource; //npc dialogue text clip
-    private static SoundEffectLibrary soundEffectLibrary;
+        private static SoundEffectLibrary soundEffectLibrary;
     [SerializeField] private Slider sfxSlider; //to change the volume using UI system
+    [SerializeField] private AudioMixerGroup sfxGroup;
 
     private void Awake()
     {
 
-        if(Instance = null)
+        if(Instance == null)
         {
             Instance = this;
             AudioSource[] audioSources = GetComponents<AudioSource>();
@@ -34,6 +44,10 @@ public class SoundEffectManager : MonoBehaviour
             randomPitchAudioSource = audioSources[1];
             voiceAudioSource = audioSources[2];
             soundEffectLibrary = GetComponent<SoundEffectLibrary>();
+
+            audioSource.outputAudioMixerGroup = sfxGroup;
+            randomPitchAudioSource.outputAudioMixerGroup = sfxGroup;
+            voiceAudioSource.outputAudioMixerGroup = sfxGroup;
             DontDestroyOnLoad(gameObject); //ensures that sound effect manager is passes through scenes rather than get destroyed upon scene change
 
         }
