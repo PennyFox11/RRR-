@@ -8,7 +8,7 @@ using UnityEngine;
 public class Diamond : MonoBehaviour
 {
     [SerializeField] private AudioClip collectSound;
-  
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();

@@ -9,13 +9,29 @@
 //Date: June 2021
 //Availability: https://discussions.unity.com/t/ontriggerenter-ontriggerexit-mechanics/844873 
 
-//https://docs.unity3d.com/Manual/AnimationParameters.html
+//Title: Animation Parameters
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/Manual/AnimationParameters.html
 
-//https://docs.unity3d.com/ScriptReference/Vector3.Distance.html
+//Title: Venstor3.Distance
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/ScriptReference/Vector3.Distance.html
 
-//https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Vector3-normalized.html 
+//Title: Vector3.normalized
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/6000.4/Documentation/ScriptReference/Vector3-normalized.html 
 
-//https://docs.unity3d.com/Manual/class-BlendTree.html 
+//Title: Animation Blend Trees
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
+//Availability: https://docs.unity3d.com/Manual/class-BlendTree.html 
 using UnityEngine;
 
 public class Enemy2Patrol : MonoBehaviour

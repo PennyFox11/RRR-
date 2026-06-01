@@ -15,6 +15,13 @@
 //Date: 2026
 //Code version: Unity 6000.3.8f1
 //Availability: https://learn.unity.com/ 
+
+//Title: HashSet<T> Class
+//Author: Microsoft Learn
+//Date: 2026
+//Code version:
+//Availability: https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=netframework-4.8.1
+
 using UnityEngine;
 using System.Collections.Generic;
 

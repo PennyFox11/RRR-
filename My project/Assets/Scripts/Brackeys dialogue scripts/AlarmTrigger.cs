@@ -1,3 +1,4 @@
+//this script was adapted from other animation and audio scripts in this project
 using UnityEngine;
 
 public class AlarmTrigger : MonoBehaviour
