@@ -2,11 +2,12 @@
 //Author: Game Code Library
 //Date: 23 February 2025
 //Code Version: Unity 2022.3.20f1 LTS
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
-using System;
 
 public class NPC2 : MonoBehaviour, IInteractable
 {
@@ -40,6 +41,16 @@ public class NPC2 : MonoBehaviour, IInteractable
         }
 
     }
+
+    public UnityEvent onTriggerEnter = new UnityEvent();
+    public UnityEvent onTriggerExit = new UnityEvent();
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) onTriggerEnter.Invoke();
+    }
+
+    
 
     public void StartDialogue()
     {

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f07ea60bf05f63546961d55ba5a9063b
+guid: d837c171fdddff049b818d9a09e08916
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6168647934245598446
-    second: EnemyAttack06_0
+      213: -467619630981985551
+    second: ArmandoWalk07_0
+  - first:
+      213: -855477597666138820
+    second: ArmandoWalk07_1
+  - first:
+      213: -1131168643514921184
+    second: ArmandoWalk07_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyAttack06_0
+      name: ArmandoWalk07_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 23
-        width: 189
-        height: 500
+        x: 11
+        y: 0
+        width: 382
+        height: 665
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee4f7210d907b9550800000000000000
-      internalID: 6168647934245598446
+      spriteID: 1fac1555c6ea289f0800000000000000
+      internalID: -467619630981985551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmandoWalk07_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 417
+        width: 13
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c352ecd48abb024f0800000000000000
+      internalID: -855477597666138820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmandoWalk07_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f8b36ac184d40f0800000000000000
+      internalID: -1131168643514921184
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EnemyAttack06_0: 6168647934245598446
+      ArmandoWalk07_0: -467619630981985551
+      ArmandoWalk07_1: -855477597666138820
+      ArmandoWalk07_2: -1131168643514921184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

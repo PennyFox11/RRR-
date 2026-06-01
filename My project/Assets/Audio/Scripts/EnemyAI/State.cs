@@ -1,16 +1,18 @@
 using UnityEngine;
 
-public class States : MonoBehaviour
+public abstract class State
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected Rigidbody2D rb;
+    protected Animator anim;
+    protected virtual string AnimBoolName => null;
+    protected EnemyAI enemy;
+
+    protected State(EnemyAI enemy)
     {
-        
+        //rb = enemy.RB;
+        //anim = enemy.anim;
+        //this.enemy = enemy; 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -95,6 +95,8 @@ public class EnemyAI : MonoBehaviour
     {
         if (TargetInDistance() && followEnabled)
         {
+            anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
+            IsWalking = true;
             PathFollow();
             
         }
@@ -125,8 +127,8 @@ public class EnemyAI : MonoBehaviour
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
 
-            anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
-            IsWalking = true;
+            //anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
+           // IsWalking = true;
         }
     }
 
@@ -137,8 +139,7 @@ public class EnemyAI : MonoBehaviour
         if (path == null)
         {
             return;
-            anim.SetBool("IsAttacking", IsAttacking);
-            IsAttacking = true;
+           
         }
 
         // Reached the end of the path
@@ -208,6 +209,8 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInDistance()
     {
+       
+
         if (target == null)
         {
            
@@ -221,6 +224,9 @@ public class EnemyAI : MonoBehaviour
 
     private void OnPathComplete(Path p)
     {
+        anim.SetBool("IsAttacking", IsAttacking);
+        IsAttacking = true;
+
         if (!p.error)
         {
             path = p;

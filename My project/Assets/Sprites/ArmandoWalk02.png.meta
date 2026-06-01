@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: f07ea60bf05f63546961d55ba5a9063b
+guid: 194cf7cfbef7c634d933fad77211679a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6168647934245598446
-    second: EnemyAttack06_0
+      213: 1377443433592261155
+    second: ArmandoWalk02_0
+  - first:
+      213: -1304384546241894740
+    second: ArmandoWalk02_1
+  - first:
+      213: -2849329404365959552
+    second: ArmandoWalk02_2
+  - first:
+      213: -7714371127355347039
+    second: ArmandoWalk02_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyAttack06_0
+      name: ArmandoWalk02_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 23
-        width: 189
-        height: 500
+        x: 6
+        y: 1
+        width: 359
+        height: 671
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee4f7210d907b9550800000000000000
-      internalID: 6168647934245598446
+      spriteID: 32a067d3189ad1310800000000000000
+      internalID: 1377443433592261155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmandoWalk02_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 360
+        width: 10
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca62eb68a25e5ede0800000000000000
+      internalID: -1304384546241894740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmandoWalk02_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e01bcc0062578d0800000000000000
+      internalID: -2849329404365959552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmandoWalk02_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 245
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af6478055c01f490800000000000000
+      internalID: -7714371127355347039
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EnemyAttack06_0: 6168647934245598446
+      ArmandoWalk02_0: 1377443433592261155
+      ArmandoWalk02_1: -1304384546241894740
+      ArmandoWalk02_2: -2849329404365959552
+      ArmandoWalk02_3: -7714371127355347039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

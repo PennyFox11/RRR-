@@ -10027,7 +10027,7 @@ MonoBehaviour:
   followEnabled: 1
   directionLookEnabled: 0
   withinStoppingDistance: 0
-  attackDistance: 0.5
+  attackDistance: 0.05
 --- !u!114 &631850476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10120,7 +10120,7 @@ Animator:
   m_GameObject: {fileID: 631850474}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2d73fd8cc33ad24e800ff45d0764b1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0ee2675a00123ba4a80f83ca13f8ff59, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -28675,6 +28675,12 @@ MonoBehaviour:
   dialogueText: {fileID: 1196076112}
   nameText: {fileID: 1402571351}
   portraitImage: {fileID: 490126216}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1410107489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29335,7 +29341,8 @@ GameObject:
   - component: {fileID: 1459066734}
   - component: {fileID: 1459066733}
   - component: {fileID: 1459066732}
-  m_Layer: 0
+  - component: {fileID: 1459066735}
+  m_Layer: 5
   m_Name: Threshold
   m_TagString: Threshold
   m_Icon: {fileID: 0}
@@ -29462,6 +29469,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -2.154, y: 0, z: 0}
+--- !u!114 &1459066735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459066731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cc07023a964a0499a35382a22f0faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  dialogueData: {fileID: 11400000, guid: fedf0d96aaab4a043a3eafc888d012d6, type: 2}
+  dialoguePanel: {fileID: 509056768}
+  dialogueText: {fileID: 1447235173}
+  nameText: {fileID: 122346613}
+  portraitImage: {fileID: 1144767688}
 --- !u!1 &1463912020
 GameObject:
   m_ObjectHideFlags: 0
