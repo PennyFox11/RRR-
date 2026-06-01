@@ -218,9 +218,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 50
+  m_MaxValue: 32
   m_WholeNumbers: 1
-  m_Value: 50
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -769,6 +769,7 @@ GameObject:
   - component: {fileID: 6423430285384025123}
   - component: {fileID: 9065292612335036981}
   - component: {fileID: 3077341727061642390}
+  - component: {fileID: -2428524634242237811}
   m_Layer: 11
   m_Name: GuardEnemy
   m_TagString: Enemy
@@ -1186,6 +1187,28 @@ MonoBehaviour:
   directionLookEnabled: 0
   withinStoppingDistance: 0
   attackDistance: 0.5
+--- !u!114 &-2428524634242237811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513627311893927140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AstarPathfindingProject::Pathfinding.SimpleSmoothModifier
+  version: 1
+  smoothType: 0
+  subdivisions: 2
+  iterations: 2
+  strength: 0.5
+  uniformLength: 1
+  maxSegmentLength: 2
+  bezierTangentLength: 0.4
+  offset: 0.2
+  factor: 0.1
 --- !u!1 &6626785646118216663
 GameObject:
   m_ObjectHideFlags: 0

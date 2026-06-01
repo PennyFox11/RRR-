@@ -10,7 +10,7 @@ public class StartMenu : MonoBehaviour
 {
     public void OnPlayButton() //
     {
-        SceneManager.LoadScene("boss level");
+        SceneManager.LoadScene(2);
     }
 
     public void OnTutorialButton()
