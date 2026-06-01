@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 
@@ -12,6 +13,8 @@ public class EnemyAI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public bool isPaused = false;
     private Animator anim;
+   
+
     public StateMachine StateMachine { get; private set; }
     public Transform player;
    
@@ -57,6 +60,8 @@ public class EnemyAI : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
     bool IsWalking = false;
+    bool IsAttacking = false;
+   
 
     private Vector2 currentVelocity;
    // protected override string AnimBoolName => "IsWalking";
@@ -71,8 +76,8 @@ public class EnemyAI : MonoBehaviour
     public void Start()
     {
         anim = GetComponent<Animator>();
+
        
-        
         spriteRenderer = GetComponent<SpriteRenderer>();
         footstepAudio = GetComponent<AudioSource>();
         seeker = GetComponent<Seeker>();
@@ -119,7 +124,9 @@ public class EnemyAI : MonoBehaviour
         if (followEnabled && TargetInDistance() && seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
-            anim.GetBool("IsWalking");
+
+            anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
+            IsWalking = true;
         }
     }
 
@@ -130,6 +137,8 @@ public class EnemyAI : MonoBehaviour
         if (path == null)
         {
             return;
+            anim.SetBool("IsAttacking", IsAttacking);
+            IsAttacking = true;
         }
 
         // Reached the end of the path
@@ -161,6 +170,8 @@ public class EnemyAI : MonoBehaviour
         float targetDistance = Vector2.Distance(rb.position, target.transform.position);
         if (followEnabled && targetDistance < activateDistance)
         {
+            
+           
             if (targetDistance <= attackDistance)
             {
                 // Stop the enemy movement
@@ -199,10 +210,13 @@ public class EnemyAI : MonoBehaviour
     {
         if (target == null)
         {
+           
             return false;
 
         }
+       
         return Vector2.Distance(transform.position, target.position) < activateDistance; //checking if the enemy is within the activation distance 
+
     }
 
     private void OnPathComplete(Path p)
