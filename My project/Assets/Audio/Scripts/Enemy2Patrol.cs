@@ -9,13 +9,13 @@
 //Date: June 2021
 //Availability: https://discussions.unity.com/t/ontriggerenter-ontriggerexit-mechanics/844873 
 
-//Title:
-//Author:
-//Date:
-//Code version:
+//Title: Animation Parameters
+//Author: Unity Documentation
+//Date: 30 May 2026
+//Code version: Unity 6000.4
 //Availability: https://docs.unity3d.com/Manual/AnimationParameters.html
 
-//Title:
+//Title: Venstor3.Dista
 //Author:
 //Date:
 //Code version:
