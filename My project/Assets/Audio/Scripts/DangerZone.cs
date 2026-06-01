@@ -13,7 +13,7 @@ public class DangerZone : MonoBehaviour
 
     AudioSource source; //refer to the audio source component
     bool playerDead = false;
-    bool isAttacking = false;
+    bool IsAttacking = false;
 
     void Awake()
     {
@@ -55,10 +55,11 @@ public class DangerZone : MonoBehaviour
             if(!source.isPlaying) 
             {
                 source.Play(); //play attack sound
-               // anim.Play("EnemyAttack"); //attack animation
+                
             }
         }
 
-       // anim.SetBool("attack", isAttacking);
+        anim.SetBool("IsAttacking", IsAttacking);
+        IsAttacking = true;
     }
 }

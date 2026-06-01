@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e74839a77332149860eae206eb912e, type: 3}
+  m_Name: Armando
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Armando
+  npcPortrait: {fileID: -5937635656571062089, guid: 30ad8a2389c7d7e409d6c783d9e25dc6, type: 3}
+  dialogueLines:
+  - Well, well, well. Look who came crawling back.
+  - 'I''m surprised your pathetic ass even made it to this point. '
+  - I see you still haven't learned your lesson. Well I'll be happy to teach you
+    again.
+  - Might even give you a big ol' lollipop to suck on at the end if you behave.
+  autoProgressLines: 01010101
+  autoProgressDisplay: 1
+  typingSpeed: 0.02
+  voiceSound: {fileID: 0}
+  voicePitch: 1

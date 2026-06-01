@@ -17,13 +17,12 @@ MonoBehaviour:
   dialogueLines:
   - Hmm..hmm..AH! Signora Rose you scared me!
   - I'm sure you've come back for poor Iris. Well you must be careful.
-  - There are hounds all over. Avoid being seen by them.
-  - If you do get noticed, you'll have 5 seconds to get away from them before they
-    alert the guards. .
+  - There's a hound in the hallway. Avoid being seen by it.
+  - If you do get noticed, you'll have 5 seconds to get away before it alerts the
+    guards. .
   - Then it's really over for you.
-  - There is a guard just across the wing. Click SPACE to attack him. Once he's defeated,
-    you will get  a key, that key will be needed to free Iris.
-  - If you get injured during combat, there's a first aid kit in the bathroom.
+  - To attack the guards, click SPACE!
+  - If you get injured during combat, there's a first aid kit in the pantry.
   - 'ALSO Signora, collect the diamonds scattered in some of the rooms.  '
   - It doesn't to collect your alimony a little early, right? ;)
   autoProgressLines: 01010101010101010101

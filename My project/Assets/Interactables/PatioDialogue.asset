@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Rose
   npcPortrait: {fileID: 21300000, guid: 50c91162fdd586747b09baa7980f7ec8, type: 3}
   dialogueLines:
-  - I remeber how happy Iris would get watchng the butterflies flutter around the
+  - I remember how happy Iris would get watchng the butterflies flutter around the
     flowers.
   - I wonder if she can still see them from here...
   autoProgressLines: 0101

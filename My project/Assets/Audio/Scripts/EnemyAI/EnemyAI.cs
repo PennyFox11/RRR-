@@ -1,13 +1,24 @@
 
-using Pathfinding; //this is from the unity package i downloaded, so basically i just imported it here
+using Pathfinding; //this is from a downloaded unity package 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 
 public class EnemyAI : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
+    public bool isPaused = false;
+    private Animator anim;
+   
+
+    public StateMachine StateMachine { get; private set; }
+    public Transform player;
+   
+
     [Header("Pathfinding")] //this will show in the script editor
     private Transform target;   //the target the enemy is targeting
     public float activateDistance = 5f; //this will be the activation distance
@@ -26,7 +37,7 @@ public class EnemyAI : MonoBehaviour
     [Header("Combat")]
     public float attackDistance = 0.5f; // The distance at which the enemy will initiate an attack
 
-     private AudioSource footstepAudio;
+    private AudioSource footstepAudio;
 
     //[Header("Enemy Type")]
     //public bool melee;
@@ -48,16 +59,31 @@ public class EnemyAI : MonoBehaviour
     private int currentWayPoint = 0;
     Seeker seeker;
     Rigidbody2D rb;
+    bool IsWalking = false;
+    bool IsAttacking = false;
+   
 
     private Vector2 currentVelocity;
+   // protected override string AnimBoolName => "IsWalking";
+   private void Awake()
+    {
+        StateMachine = new StateMachine();
+        //anim = GetComponent<Animator>();
+    }
+    
+
 
     public void Start()
     {
+        anim = GetComponent<Animator>();
+
+       
+        spriteRenderer = GetComponent<SpriteRenderer>();
         footstepAudio = GetComponent<AudioSource>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if(playerObject != null)
+        if (playerObject != null)
         {
             target = playerObject.transform;
         }
@@ -69,16 +95,19 @@ public class EnemyAI : MonoBehaviour
     {
         if (TargetInDistance() && followEnabled)
         {
+            anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
+            IsWalking = true;
             PathFollow();
+            
         }
         else
         {
             rb.linearVelocity = Vector2.zero;
         }
 
-        if(rb.linearVelocity.magnitude > 0.1f)
+        if (rb.linearVelocity.magnitude > 0.1f)
         {
-            if(!footstepAudio.isPlaying)
+            if (!footstepAudio.isPlaying)
             {
                 footstepAudio.Play();
             }
@@ -87,6 +116,9 @@ public class EnemyAI : MonoBehaviour
         {
             footstepAudio.Pause();
         }
+
+        float distance = Vector2.Distance(transform.position, target.transform.position);
+
     }
 
     private void UpdatePath()
@@ -94,6 +126,9 @@ public class EnemyAI : MonoBehaviour
         if (followEnabled && TargetInDistance() && seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
+
+            //anim.SetBool("IsWalking", IsWalking); //when seeker path has started, walk animation is activated at the same time
+           // IsWalking = true;
         }
     }
 
@@ -104,6 +139,7 @@ public class EnemyAI : MonoBehaviour
         if (path == null)
         {
             return;
+           
         }
 
         // Reached the end of the path
@@ -135,6 +171,8 @@ public class EnemyAI : MonoBehaviour
         float targetDistance = Vector2.Distance(rb.position, target.transform.position);
         if (followEnabled && targetDistance < activateDistance)
         {
+            
+           
             if (targetDistance <= attackDistance)
             {
                 // Stop the enemy movement
@@ -171,19 +209,32 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInDistance()
     {
+       
+
         if (target == null)
         {
+           
             return false;
+
         }
+       
         return Vector2.Distance(transform.position, target.position) < activateDistance; //checking if the enemy is within the activation distance 
+
     }
 
     private void OnPathComplete(Path p)
     {
+        anim.SetBool("IsAttacking", IsAttacking);
+        IsAttacking = true;
+
         if (!p.error)
         {
             path = p;
             currentWayPoint = 0;
         }
     }
+
+   
+
+   
 }
